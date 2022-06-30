@@ -1,0 +1,1 @@
+package com.rks.orderservice.config;//@EnableDiscoveryClientpublic class EurekaClientConfig {}

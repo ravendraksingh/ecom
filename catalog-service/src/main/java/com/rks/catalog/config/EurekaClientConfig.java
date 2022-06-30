@@ -1,0 +1,1 @@
+package com.rks.catalog.config;import org.springframework.cloud.client.discovery.EnableDiscoveryClient;//@EnableDiscoveryClientpublic class EurekaClientConfig {}

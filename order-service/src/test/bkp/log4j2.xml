@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Properties>
+        <Property name="hostName">${hostName}</Property>
+        <Property name="applicationName">order-service</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    %d{yyyy-MM-dd HH:mm:ss:SSS} [${hostName}] [${applicationName}] [%-5level] [%t] [TraceId:
+                    %X{traceId}] [SpanId: %X{spanId}] [ParentSpanId: %X{X-B3-ParentSpanId} %X{parentSpanId}] %c{1} -
+                    %msg%n
+                </pattern>>
+            </PatternLayout>
+        </Console>
+        <File name="File-Appender" fileName="logs/xmlfilelog.log">
+            <PatternLayout>
+                <pattern>
+                    %d{yyyy-MM-dd HH:mm:ss:SSS} [${hostName}] [${applicationName}] [%-5level] [%t] [TraceId:
+                    %X{traceId}] [SpanId: %X{spanId}] [ParentSpanId: %X{X-B3-ParentSpanId}] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.rks.orderservice.service.impl.OrderServiceImpl" level="info">
+            <AppenderRef ref="File-Appender"/>he preceding c
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>

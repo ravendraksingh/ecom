@@ -1,0 +1,1 @@
+package com.rks.catalog.constants;public class ProductServiceErrorCodes {    public static final String PRODUCT_NOT_FOUND = "PRNFE0001";    public static final String CATEGORY_NOT_FOUND = "CGNFE0001";}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b660986f-48f6-4ea2-9b64-3c20c854f409" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/config/ConsulConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/application-uat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rks/orderserviceproxy/OrderServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rks/orderserviceproxy/OrderserviceProxyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/ApigatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/ApigatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/request/ResponseLogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/response/ResponseLogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/ErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/ErrorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/PostFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/PostFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/resources/application-uat.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/resources/application-uat.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-service/src/test/java/com/rks/eureka/EurekaServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/EurekaClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/EurekaClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/LoadBalancedRoutesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/LoadBalancedRoutesConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/test/java/com/rks/gateway/GatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/config/EurekaClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/config/EurekaClientConfig.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2BLOThW6HtxIgN1bYWdEHl69GLE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderserviceProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="orderservice-proxy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rks.orderserviceproxy.OrderserviceProxyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b660986f-48f6-4ea2-9b64-3c20c854f409" name="Default Changelist" comment="" />
+      <created>1656681909417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656681909417</updated>
+      <workItem from="1656681913866" duration="1483000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

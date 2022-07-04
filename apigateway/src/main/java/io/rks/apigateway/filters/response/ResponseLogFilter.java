@@ -1,21 +1,16 @@
-package io.rks.apigateway.filters.request;
+package io.rks.apigateway.filters.response;
 
 import com.google.common.io.CharStreams;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.exception.ZuulException;
-import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-
-import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 
 @Component
 public class ResponseLogFilter {

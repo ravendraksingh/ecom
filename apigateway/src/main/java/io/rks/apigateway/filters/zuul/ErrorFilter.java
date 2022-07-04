@@ -30,9 +30,9 @@ public class ErrorFilter extends ZuulFilter {
         return true;
     }
 
-    public Object run() throws ZuulException {
+    public Object run() {
         RequestContext context = RequestContext.getCurrentContext();
-        HttpServletRequest request = context.getRequest();
+       // HttpServletRequest request = context.getRequest();
         logger.info("in ErrorFilter.run method");
         ApiException apiException = getApiException(context.getThrowable());
         //RequestDispatcher dispatcher = request.getRequestDispatcher()
@@ -45,21 +45,30 @@ public class ErrorFilter extends ZuulFilter {
 
     protected ApiException getApiException(Throwable throwable) {
         logger.info("in ErrorFilter.getApiException method");
-        logger.info(throwable.getCause());
         logger.info(throwable.getCause().getMessage());
         ApiException apiException = new ApiException(500, INTERNAL_SERVER_ERROR, INTERNAL_SERVER_ERROR);
 
         if (throwable.getCause() instanceof ApiException) {
-            logger.debug("ApiException instance. Message=" + throwable.getCause().getMessage());
+            logger.debug("ApiException:");
+            logger.debug("error: " + throwable.getCause());
+            logger.debug("message: " + throwable.getCause().getMessage());
             return (ApiException) throwable.getCause();
         }
         if (throwable.getCause() instanceof ZuulException) {
-            logger.debug("ZuulException 1: " + throwable.getCause());
+            logger.debug("ZuulException 1:");
+            logger.debug("error: " + throwable.getCause());
+            logger.debug("message: " + throwable.getCause().getMessage());
             return apiException;
         }
         if (throwable instanceof ZuulException) {
-            logger.debug("ZuulException 2: " + throwable);
+            logger.debug("ZuulException 2:");
+            if (throwable.getCause().getCause().getCause() != null) {
+                logger.debug("error: " + throwable.getCause().getCause().getCause());
+                logger.debug("message: " + throwable.getCause().getCause().getCause().getMessage());
+                apiException.setMessage(throwable.getCause().getCause().getCause().getMessage());
+            }
             return apiException;
+            //throw new ZuulException(throwable.getCause(), 500, throwable.getMessage());
         }
         return apiException;
     }

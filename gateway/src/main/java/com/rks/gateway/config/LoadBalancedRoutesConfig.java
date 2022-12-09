@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Component
-@Order(2)
+//@Component
+//@Order(2)
 public class LoadBalancedRoutesConfig {
 
     @Autowired

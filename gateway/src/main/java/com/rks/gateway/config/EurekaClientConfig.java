@@ -1,1 +1,1 @@
-package com.rks.gateway.config;//@EnableDiscoveryClientpublic class EurekaClientConfig {}
+package com.rks.gateway.config;import org.springframework.cloud.client.discovery.EnableDiscoveryClient;@EnableDiscoveryClientpublic class EurekaClientConfig {}

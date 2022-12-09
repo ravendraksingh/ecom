@@ -1,10 +1,53 @@
+
 server:
   port: 9099
 
 zuul:
+  ignored-patterns: /actuator/**
   routes:
     order-service:
       path: /api/v1/orders/**
-      #url: http://localhost:8200
-      url: lb://
+      serviceId: order-service
       stripPrefix: false
+
+## To enable client side load balancing - use ribbon (configuration below)
+#order-service:
+#  ribbon:
+#    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+#    listOfServers: http://localhost:8201, http://localhost:8202
+#    ConnectTimeout: 1000
+#    ReadTimeout: 3000
+#    MaxTotalHttpConnections: 500
+#    MaxConnectionsPerHost: 100
+
+spring:
+  application:
+    name: api-gateway
+#  cloud:
+#    consul:
+#      discovery:
+#        enabled: false
+#        id: ${spring.application.name}
+#    config:
+#      discovery:
+#        enabled: false
+#      enabled: false
+#      host: localhost
+#      port: 8500
+
+logging:
+  level:
+    ROOT: info
+    org.springframework.web: debug
+    org.springframework.cloud.netflix: trace
+    io.rks.apigateway: debug
+    io.rks.apigateway.filters.zuul: debug
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

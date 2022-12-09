@@ -3,9 +3,7 @@ package io.rks.apigateway.filters.zuul;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
-import io.rks.apigateway.filters.request.ResponseLogFilter;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.rks.apigateway.filters.response.ResponseLogFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class PostFilter extends ZuulFilter {

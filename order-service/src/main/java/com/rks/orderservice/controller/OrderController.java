@@ -1,7 +1,6 @@
 package com.rks.orderservice.controller;
 
 import brave.Tracer;
-import com.rks.orderservice.domain.Order;
 import com.rks.orderservice.dto.request.OrderRequest;
 import com.rks.orderservice.dto.request.UpdateOrderRequest;
 import com.rks.orderservice.dto.response.OrderResponse;
@@ -28,7 +27,7 @@ import java.util.List;
 
 @Api(produces = "application/json", value = "Order operations")
 @Validated
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3080", "http://localhost:3090", "http://localhost:8080", "http://localhost:8090"})
 @RestController
 @RequestMapping("/api/v1")
 public class OrderController {
@@ -37,8 +36,8 @@ public class OrderController {
     private OrderService orderService;
     @Autowired
     RestTemplate restTemplate;
-    @Autowired
-    Tracer tracer;
+//    @Autowired
+//    Tracer tracer;
 
     @Autowired
     public OrderController(OrderService orderService) {
@@ -50,6 +49,12 @@ public class OrderController {
         return new RestTemplate();
     }
 
+
+    /**
+     * Get order details for orderId
+     * @param orderId
+     * @return com.rks.orderservice.dto.response.OrderResponse
+     */
     @ApiOperation(value = "Get order details for an order id", response = OrderResponse.class)
     @GetMapping(value = "/orders/{orderId}", produces = "application/json")
     @ResponseStatus(HttpStatus.OK)
@@ -57,6 +62,10 @@ public class OrderController {
         return orderService.getOrderById(orderId);
     }
 
+    /**
+     * Create new order API
+     * @return com.rks.orderservice.dto.response.OrderResponse
+     */
     @ApiOperation(value = "Create a new order", response = OrderResponse.class)
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Successfully created a new order"),
@@ -75,8 +84,8 @@ public class OrderController {
 
     @GetMapping("/orders")
     @ResponseStatus(HttpStatus.OK)
-    public List<Order> getAllOrders() {
-        return orderService.findAllOrders();
+    public List<OrderResponse> getAllOrders() {
+       return orderService.findAllOrders();
     }
 
     @PutMapping("/orders/{orderId}")
@@ -85,26 +94,4 @@ public class OrderController {
                                      @RequestBody UpdateOrderRequest request) {
         return orderService.updateOrder(orderId, request);
     }
-
-    @GetMapping("/users/{userEmail}/orders")
-    @ResponseStatus(HttpStatus.OK)
-    public List<OrderResponse> getAllOrdersByUserEmail(@PathVariable(name = "userEmail") @Email(message = "Invalid email id: ${validatedValue}") String email) {
-        return orderService.getAllOrdersByEmail(email);
-    }
-
-    @GetMapping("/users/{userEmail}/orders/{orderId}")
-    @ResponseStatus(HttpStatus.OK)
-    public OrderResponse getOrderByUserEmailAndOrderId(@PathVariable(name = "userEmail") @Email(message = "Invalid email id: ${validatedValue}") String email,
-                                                       @PathVariable(name = "orderId") @Min(value=1, message="Order id must be greater than or equal to {value}") Long orderId) {
-        return orderService.getOrderByUserEmailAndOrderId(email, orderId);
-    }
-
-    @GetMapping("/users/orders")
-    @ResponseStatus(HttpStatus.OK)
-    public List<OrderResponse> getAllOrdersByUserEmailAndOrderDate(@RequestParam(name = "email") @Email(message = "Invalid email id: ${validatedValue}") String email,
-                                                                   @RequestParam(name = "date") String orderDate) throws ParseException {
-        Date date = new SimpleDateFormat("dd-MM-yyyy").parse(orderDate);
-        return orderService.getAllOrdersByUserEmailAndOrderDate(email, date);
-    }
-
 }

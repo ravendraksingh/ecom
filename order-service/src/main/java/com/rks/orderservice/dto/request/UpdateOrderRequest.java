@@ -12,7 +12,6 @@ import static com.rks.orderservice.constants.OrderServiceConstants.PAYMENT_STATU
 @NoArgsConstructor
 @Data
 public class UpdateOrderRequest {
-
     @JsonProperty(ORDER_STATUS)
     private String orderStatus;
     @JsonProperty(PAYMENT_STATUS)

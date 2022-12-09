@@ -42,4 +42,21 @@ public class Constant {
 
     public static final String JWT_TOKEN_GENERATION_ERROR_MSG = "Error in jwt token generation";
     public static final int JWT_EXPIRATION_TIME = 3600000;
+
+    // Order Status
+    public static final String ORDER_STATUS_CREATED = "created";
+    public static final String ORDER_STATUS_FAILED = "failed";
+    // Payment Status
+    public static final String PAYMENT_STATUS_CREATED = "created";
+    public static final String PAYMENT_STATUS_AUTHORIZED = "authorized";
+    public static final String PAYMENT_STATUS_CAPTURED = "captured";
+    public static final String PAYMENT_STATUS_REFUNDED = "refunded";
+    public static final String PAYMENT_STATUS_FAILED = "failed";
+
+    // Payment Methods
+    public static final String PAYMENT_METHOD_CARD = "card";
+    public static final String PAYMENT_METHOD_NB = "netbanking";
+    public static final String PAYMENT_METHOD_WALLET = "wallet";
+    public static final String PAYMENT_METHOD_EMI = "emi";
+    public static final String PAYMENT_METHOD_UPI = "upi";
 }

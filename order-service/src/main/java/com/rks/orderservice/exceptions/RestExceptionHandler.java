@@ -165,15 +165,17 @@ public class RestExceptionHandler {
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponse> exceptionHandler(Exception e) {
-        logger.error("Unhandled exceptions {}", CommonUtils.exceptionFormatter(e));
-        ErrorResponse errorResponse = new ErrorResponse();
-        errorResponse.setStatus(PENDING);
-        errorResponse.setMessage("Error occurred. Please try again in sometime");
-        logger.info("Status changed to pending {}", errorResponse);
-        return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
-    }
+//    @ExceptionHandler(Exception.class)
+//    public ResponseEntity<ErrorResponse> exceptionHandler(Exception e) {
+//        logger.error("Unhandled exceptions {}", CommonUtils.exceptionFormatter(e));
+//        ErrorResponse errorResponse = new ErrorResponse();
+//        errorResponse.setStatus(FAILED);
+//        errorResponse.setCode(HttpStatus.INTERNAL_SERVER_ERROR.value());
+//        errorResponse.setMessage("Error occurred. Please try again in sometime");
+//        //errorResponse.setMessage(e.getMessage());
+//        logger.info("Status changed to pending {}", errorResponse);
+//        return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+//    }
 
     private ErrorResponse getErrorObject(BaseException e) {
         ErrorResponse errorResponse = new ErrorResponse();

@@ -2,14 +2,12 @@ package com.rks.orderservice.rabbitmq;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.rks.orderservice.domain.Order;
+import com.rks.orderservice.entity.Order;
 import com.rks.orderservice.repository.OrderRepository;
 import com.rks.orderservice.util.StatusEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.amqp.rabbit.annotation.RabbitListeners;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 //@Component
 public class OrderCreatedListener {

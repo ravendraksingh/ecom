@@ -1,7 +1,7 @@
 package com.rks.orderservice.bootstrap;
 
-import com.rks.orderservice.domain.Item;
-import com.rks.orderservice.domain.Order;
+import com.rks.orderservice.entity.Item;
+import com.rks.orderservice.entity.Order;
 import com.rks.orderservice.exceptions.ServiceError;
 import com.rks.orderservice.exceptions.ServiceErrorRepository;
 import com.rks.orderservice.repository.OrderRepository;
@@ -29,13 +29,13 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //orderRepository.deleteAll();
-        long count = orderRepository.count();
-        log.info("Existing order count in table: " + count);
-        if (count == 0) {
-            loadData();
-        }
+//        long count = orderRepository.count();
+//        log.info("Existing order count in table: " + count);
+//        if (count == 0) {
+//            loadData();
+//        }
         //testUpdateOrder();
-        log.info("Loading new exceptions into table");
+//        log.info("Loading new exceptions into table");
         //loadExceptions();
     }
 

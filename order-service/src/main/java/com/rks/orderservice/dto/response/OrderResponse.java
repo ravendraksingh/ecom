@@ -8,7 +8,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -41,19 +40,30 @@ public class OrderResponse implements Serializable {
     @JsonProperty(PAYMENT_STATUS)
     private String paymentStatus;
 
-    @Pattern(regexp = "^\\s*(?=.*[1-9])\\d*(?:\\.\\d{1,2})?\\s*$", message = "Amount must be a positive number with maximal 2 decimal places")
-    @JsonProperty(value = ORDER_AMOUNT, required = true)
-    private BigDecimal orderAmount;
+    @JsonProperty("total_mrp")
+    private BigDecimal totalMRP;
+
+    @JsonProperty("total_saving")
+    private BigDecimal totalSaving;
+
+    //@Pattern(regexp = "^\\s*(?=.*[1-9])\\d*(?:\\.\\d{1,2})?\\s*$", message = "Amount must be a positive number with maximal 2 decimal places")
+    @JsonProperty("net_amount")
+    private BigDecimal netAmount;
 
     @JsonProperty(ITEMS_IN_ORDER)
-    private List<OrderItem> items = new ArrayList<>();
+    private List<OrderItemResponse> items = new ArrayList<>();
 
-    public void addItem(Long id, String name, int quantity, BigDecimal price) {
-        OrderItem newItem = new OrderItem();
-        newItem.setId(id);
+    public void addItem(Long id, String name, int quantity,
+                        BigDecimal price, BigDecimal mrp, BigDecimal discount, String imageUrl, String sku) {
+        OrderItemResponse newItem = new OrderItemResponse();
         newItem.setName(name);
         newItem.setQuantity(quantity);
+        newItem.setMrp(mrp);
         newItem.setPrice(price);
+        newItem.setDiscount(discount);
+        newItem.setImageUrl(imageUrl);
+        newItem.setSku(sku);
+        //newItem.setId(id);
 
         if (items == null) {
             items = new ArrayList<>();
@@ -61,22 +71,18 @@ public class OrderResponse implements Serializable {
         items.add(newItem);
     }
 
-    public void updateOrderAmount(BigDecimal amount) {
-        if (orderAmount == null) {
-            orderAmount = BigDecimal.ZERO;
-        }
-        orderAmount = orderAmount.add(amount);
-    }
-
     @Override
     public String toString() {
-        return "OrderResponse{" +
+        return "{" +
                 "orderId=" + orderId +
-                ", orderDate=" + orderDate +
+                " orderDate=" + orderDate +
                 ", userEmail='" + userEmail + '\'' +
                 ", orderStatus='" + orderStatus + '\'' +
                 ", paymentStatus='" + paymentStatus + '\'' +
-                ", orderAmount=" + orderAmount +
+                ", netAmount=" + netAmount +
+                ", totalMRP=" + totalMRP +
+                ", totalSaving=" + totalSaving +
+                ", items=" + items +
                 '}';
     }
 }

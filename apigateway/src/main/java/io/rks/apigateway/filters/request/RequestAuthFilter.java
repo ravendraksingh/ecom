@@ -33,7 +33,7 @@ public class RequestAuthFilter {
     public void filter(RequestContext requestContext) {
         logger.debug("in RequestAuthFilter.filter method");
         HttpServletRequest request = requestContext.getRequest();
-        //logger.debug(getRequestDetails(request));
+        logger.debug(getRequestDetails(request));
 
         BaseApiRequest baseApiRequest = BaseApiRequestBuilder.build(request);
 

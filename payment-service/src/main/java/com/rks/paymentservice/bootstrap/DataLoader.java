@@ -5,9 +5,7 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.rks.paymentservice.clients.orderservice.OrderServiceClient;
-import com.rks.paymentservice.domain.PaymentMaster;
-import com.rks.paymentservice.dto.order.OrderResponse;
-import com.rks.paymentservice.repository.PaymentMasterRepository;
+import com.rks.paymentservice.dto.request.OrderResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +22,8 @@ public class DataLoader implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(DataLoader.class);
 
-    private PaymentMasterRepository paymentMasterRepository;
-
     @Autowired
     private OrderServiceClient orderServiceClient;
-
-    public DataLoader(PaymentMasterRepository paymentMasterRepository) {
-        this.paymentMasterRepository = paymentMasterRepository;
-    }
 
     @Override
     public void run(String... args) throws Exception {
@@ -41,7 +33,7 @@ public class DataLoader implements CommandLineRunner {
         //}
         //getDataFromOrderService();
 
-        testJwtToken();
+        //testJwtToken();
     }
 
     private void testJwtToken() throws Exception {
@@ -99,11 +91,5 @@ public class DataLoader implements CommandLineRunner {
 
     private void loadData() {
         log.info("Loading data ...........");
-        PaymentMaster paymentMaster = new PaymentMaster();
-        paymentMaster.setOrderDate(new Date());
-        paymentMaster.setOrderId(183L);
-        paymentMaster.setPaymentDate(new Date());
-        paymentMaster.setPaymentStatus("paid");
-        paymentMasterRepository.save(paymentMaster);
     }
 }

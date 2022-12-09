@@ -1,6 +1,6 @@
 package com.rks.orderservice.repository;
 
-import com.rks.orderservice.domain.Order;
+import com.rks.orderservice.entity.Order;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
@@ -13,9 +13,9 @@ import java.util.List;
 public interface OrderRepository extends PagingAndSortingRepository<Order, Long> {
 
     @Query("from orders t where t.orderStatus = :orderStatus")
-
     List<Order> findByOrderStatus(@Param("orderStatus") String orderStatus);
-    List<Order> findAllByUserEmail(String email);
+    List<Order> findAllByUserEmailOrderByIdDesc(String email);
+
     Order findOrderByUserEmailAndId(String email, Long id);
 
     @Query("from orders t where t.userEmail = :email and t.orderDate = :date")

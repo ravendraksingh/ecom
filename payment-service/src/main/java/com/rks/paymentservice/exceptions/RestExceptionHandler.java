@@ -3,7 +3,7 @@ package com.rks.paymentservice.exceptions;
 
 import com.rks.paymentservice.dto.response.ErrorResponse;
 import com.rks.paymentservice.util.StatusEnum;
-import com.rks.paymentservice.utility.CommonUtils;
+import com.rks.paymentservice.util.CommonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -163,15 +163,15 @@ public class RestExceptionHandler {
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponse> exceptionHandler(Exception e) {
-        logger.error("Unhandled exception {}", CommonUtils.exceptionFormatter(e));
-        ErrorResponse errorResponse = new ErrorResponse();
-        errorResponse.setStatus(StatusEnum.PENDING.getStatus());
-        errorResponse.setMessage("Error occurred\n\nPlease try again in sometime");
-        logger.info("Status changed to pending {}", errorResponse);
-        return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
-    }
+//    @ExceptionHandler(Exception.class)
+//    public ResponseEntity<ErrorResponse> exceptionHandler(Exception e) {
+//        logger.error("Unhandled exception {}", CommonUtils.exceptionFormatter(e));
+//        ErrorResponse errorResponse = new ErrorResponse();
+//        errorResponse.setStatus(StatusEnum.PENDING.getStatus());
+//        errorResponse.setMessage("Error occurred\n\nPlease try again in sometime");
+//        logger.info("Status changed to pending {}", errorResponse);
+//        return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+//    }
 
     private ErrorResponse getErrorObject(BaseException e) {
         ErrorResponse errorResponse = new ErrorResponse();

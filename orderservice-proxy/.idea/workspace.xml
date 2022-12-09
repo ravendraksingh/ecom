@@ -5,37 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b660986f-48f6-4ea2-9b64-3c20c854f409" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/config/ConsulConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/application-uat.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rks/orderserviceproxy/OrderServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rks/orderserviceproxy/OrderserviceProxyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apigateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/ApigatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/ApigatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/request/ResponseLogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/response/ResponseLogFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/ErrorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/ErrorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/PostFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/zuul/PostFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/bootstrap/DataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/controllers/UserOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/domains/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/dto/request/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/dto/response/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/mappers/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/proxy/orderservice/OrderServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/proxy/orderservice/dto/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/proxy/orderservice/dto/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/rks/userservice/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/test/java/com/rks/userservice/UserServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/request/RequestAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/java/io/rks/apigateway/filters/request/RequestAuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../apigateway/src/main/resources/application-uat.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/resources/application-uat.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-service/src/test/java/com/rks/eureka/EurekaServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/EurekaClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/EurekaClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/LoadBalancedRoutesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/rks/gateway/config/LoadBalancedRoutesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/test/java/com/rks/gateway/GatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apigateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../apigateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/config/EurekaClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/config/EurekaClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/rks/orderservice/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rks/orderserviceproxy/OrderServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rks/orderserviceproxy/OrderServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,17 +80,6 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrderserviceProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="orderservice-proxy" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.rks.orderserviceproxy.OrderserviceProxyApplication" />
@@ -109,6 +97,9 @@
       <option name="presentableId" value="Default" />
       <updated>1656681909417</updated>
       <workItem from="1656681913866" duration="1483000" />
+      <workItem from="1656916364834" duration="1326000" />
+      <workItem from="1656923788326" duration="8000" />
+      <workItem from="1656932250294" duration="487000" />
     </task>
     <servers />
   </component>

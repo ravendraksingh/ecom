@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Setter
 @Getter
 @Configuration
-//@PropertySource("classpath:application.properties")
+//@PropertySource("classpath:application.yml")
 @ConditionalOnProperty(name = "order-created.exchange.name", havingValue = "order-created-exchange")
 public class OrderCreatedRabbitMQProperties {
 

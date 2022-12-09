@@ -42,4 +42,12 @@ public class OrderServiceConstants {
 
     public static final String JWT_TOKEN_GENERATION_ERROR_MSG = "Error in jwt token generation";
     public static final String USER_EMAIL = "email";
+
+    public static final String HEADER_TRACE_ID = "X-trace-id";
+    public static final String HEADER_CLIENT_ID = "X-client-id";
+    public static final String HEADER_CLIENT_SECRET = "X-client-secret";
+    public static final String HEADER_USERNAME = "X-username";
+    public static final String HEADER_PASSWORD = "X-password";
+    public static final String HEADER_TIMESTAMP = "X-timestamp";
+    public static final String HEADER_RESPONSE_HMAC = "X-hmac";
 }

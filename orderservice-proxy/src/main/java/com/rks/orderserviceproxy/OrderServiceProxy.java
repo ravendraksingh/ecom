@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RibbonClient(name = "order-service")
-@FeignClient("order-service")
+@FeignClient(name = "order-service")
 public interface OrderServiceProxy {
 
     @GetMapping("/api/v1/orders/{id}")

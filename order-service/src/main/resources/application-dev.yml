@@ -1,0 +1,51 @@
+#app.name=@project.artifactId@
+#app.version=@project.version@
+
+spring:
+  application:
+    name: order-service
+  # The SQL dialect makes Hibernate generate better SQL for the chosen database
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+  # Hibernate ddl auto (create, create-drop, validate, update)
+## Jackson Mapper
+  jackson:
+    time-zone: Asia/Kolkata
+    locale: en_IN
+
+
+server:
+  port: 8200
+
+
+database:
+  username: root
+  # user RKSEncryption.encrypt to encrypt the value [encryption-1.0.jar]
+  password: 4ec5fa62aafc42c3f15250ed97fd8fd3
+  url: jdbc:mysql://localhost:3306/order-service?useSSL=false&allowPublicKeyRetrieval=true
+
+# logging level
+logging:
+  level:
+    org.springframework.web: info
+    com.rks.orderservice: debug
+    org.hibernate.SQL: error
+  #logging.level.org.hibernate.type=TRACE
+
+
+# AMQP RabbitMQ configuration
+rabbitmq:
+  enabled: false
+
+orderserviceconfig:
+  localclientConfig:
+    clientId: LOCALHOST
+    certificatePath: /Users/ravendrasingh/projects/data/certs
+    certFileName: Ravendra_Singh.cer
+    certificatePassword: test123
+

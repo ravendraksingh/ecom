@@ -1,6 +1,6 @@
 package com.rks.orderservice.service.impl;
 
-import com.rks.orderservice.domain.Order;
+import com.rks.orderservice.entity.Order;
 import com.rks.orderservice.dto.request.OrderRequest;
 import com.rks.orderservice.dto.request.UpdateOrderRequest;
 import com.rks.orderservice.dto.response.OrderResponse;
@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -49,7 +50,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Transactional
     public OrderResponse createNewOrder(OrderRequest orderRequest) {
-        logger.info("Creating new order");
+        logger.info("Creating new order for orderRequest={}", orderRequest);
         Order savedOrder = orderRepository.save(createOrderForOrderRequest(orderRequest));
         if (logger.isDebugEnabled()) {
             logger.debug("Order created successfully with orderId={}. savedOrder={}", savedOrder.getId(), savedOrder);
@@ -77,16 +78,23 @@ public class OrderServiceImpl implements OrderService {
         return createOrderResponseForOrder(optionalOrder.get());
     }
 
-    public List<Order> findAllOrders() {
+    public List<OrderResponse> findAllOrders() {
         logger.info("Fetching all orders");
         List<Order> orders = new ArrayList<>();
-        orderRepository.findAll().forEach(orders::add);
-        return orders;
+        //orderRepository.findAll().forEach(orders::add);
+        orderRepository.findAll(Sort.by(Sort.Direction.DESC, "id")).forEach(orders::add);
+        if (orders.isEmpty()) {
+            throw ServiceErrorFactory.getNamedException(ORDER_NOT_FOUND);
+        }
+        List<OrderResponse> response = orders.stream().map(this::createOrderResponseForOrder).collect(Collectors.toList());
+        logger.info("OrderResponse List: ");
+        logger.info("" + response);
+        return response;
     }
 
     public List<OrderResponse> getAllOrdersByEmail(String email) {
         logger.info("Fetching all orders for email={}", email);
-        List<Order> orders = orderRepository.findAllByUserEmail(email).stream().collect(Collectors.toList());
+        List<Order> orders = orderRepository.findAllByUserEmailOrderByIdDesc(email).stream().collect(Collectors.toList());
         if (orders.isEmpty()) {
             logger.error("Order not found for email={}", email);
             throw ServiceErrorFactory.getNamedException(ORDER_NOT_FOUND);

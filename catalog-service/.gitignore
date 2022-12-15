@@ -17,6 +17,7 @@ out/
 .idea_modules/
 *.iml
 *.ipr
+*.out
 
 .circleci
 .mvn

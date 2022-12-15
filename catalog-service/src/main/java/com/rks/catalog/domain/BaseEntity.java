@@ -1,1 +1,0 @@
-package com.rks.catalog.domain;import java.io.Serializable;public class BaseEntity implements Serializable {}

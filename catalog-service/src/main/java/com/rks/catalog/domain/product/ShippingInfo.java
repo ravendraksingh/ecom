@@ -1,1 +1,0 @@
-package com.rks.catalog.domain.product;import com.fasterxml.jackson.annotation.JsonInclude;import com.rks.catalog.domain.BaseEntity;import lombok.Builder;import lombok.Data;@JsonInclude(JsonInclude.Include.NON_NULL)@Builder@Datapublic class ShippingInfo extends BaseEntity {    private int weight;    private DimensionInfo dimensions;}

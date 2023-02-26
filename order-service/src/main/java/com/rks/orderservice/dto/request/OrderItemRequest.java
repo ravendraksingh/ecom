@@ -31,4 +31,6 @@ public class OrderItemRequest {
     @NotEmpty(message = "Image url cannot be null")
     @JsonProperty("image_url")
     private String imageUrl;
+
+    private String description;
 }

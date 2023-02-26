@@ -24,7 +24,7 @@ public class OrderRequestToOrderConverter implements Converter<OrderRequest, Ord
         for (OrderItemRequest i : context.getSource().getItems()) {
             context.getDestination().addItem(i.getSku(), i.getName(),
                     i.getQuantity(), i.getMrp(), i.getDiscount(), i.getPrice(),
-                    i.getImageUrl());
+                    i.getImageUrl(), i.getDescription());
         }
         return context.getDestination();
     }

@@ -1,9 +1,9 @@
 package com.rks.orderservice.service.impl;
 
-import com.rks.orderservice.entity.Order;
 import com.rks.orderservice.dto.request.OrderRequest;
 import com.rks.orderservice.dto.request.UpdateOrderRequest;
 import com.rks.orderservice.dto.response.OrderResponse;
+import com.rks.orderservice.entity.Order;
 import com.rks.orderservice.exceptions.ServiceErrorFactory;
 import com.rks.orderservice.mappers.OrderMapper;
 import com.rks.orderservice.rabbitmq.OrderCreatedMessageProducer;
@@ -36,12 +36,13 @@ public class OrderServiceImpl implements OrderService {
     private OrderCreatedMessageProducer orderCreatedMessageProducer;
     private OrderMapper orderMapper;
 
-    @Autowired
+//    @Autowired
     public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper) {
         this.orderRepository = orderRepository;
         this.orderMapper = orderMapper;
     }
 
+    @Autowired
     public OrderServiceImpl(OrderRepository orderRepository, OrderCreatedMessageProducer orderCreatedMessageProducer, OrderMapper orderMapper) {
         this.orderRepository = orderRepository;
         this.orderCreatedMessageProducer = orderCreatedMessageProducer;
@@ -56,7 +57,10 @@ public class OrderServiceImpl implements OrderService {
             logger.debug("Order created successfully with orderId={}. savedOrder={}", savedOrder.getId(), savedOrder);
         }
         if (queueEnabled) {
-            OrderMessage message = new OrderMessage(savedOrder.getId(), savedOrder.getOrderStatus());
+            logger.info("Queue is enabled");
+            OrderMessage message = new OrderMessage(savedOrder.getId(),
+                    savedOrder.getOrderDate(), savedOrder.getUserEmail(),
+                    savedOrder.getOrderStatus(), savedOrder.getPaymentStatus(), savedOrder.getNetAmount());
             if (logger.isDebugEnabled()) {
                 logger.debug("Creating orderMessage. orderMessage={}", message);
             }
@@ -189,4 +193,5 @@ public class OrderServiceImpl implements OrderService {
         orderMapper.map(orderRequest, order);
         return order;
     }
+    
 }

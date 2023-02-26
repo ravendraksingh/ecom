@@ -2,7 +2,7 @@
 //
 //import com.google.gson.Gson;
 //import com.google.gson.GsonBuilder;
-//import com.rks.paymentservice.service.IPaymentService;
+//import com.rks.paymentservice.service.PaymentService;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 //import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -10,23 +10,20 @@
 //import org.springframework.stereotype.Component;
 //
 //@Component
-//public class OrderCreatedListener {
-//
-//    private static final Logger log = LoggerFactory.getLogger(OrderCreatedListener.class);
-//    private IPaymentService paymentService;
+//public class PaymentServiceListener {
+//    private static final Logger log = LoggerFactory.getLogger(PaymentServiceListener.class);
 //
 //    @Autowired
-//    public OrderCreatedListener(IPaymentService paymentService) {
-//        this.paymentService = paymentService;
+//    public PaymentServiceListener() {
 //    }
 //
 //    @RabbitListener(queues = "${rabbitmq.queueName}")
-//    public void listenToOrderCreated(byte[] message) {
+//    public void listenToPaymentCreated(byte[] message) {
 //
 //        String msg = new String(message);
 //        Gson gson = new GsonBuilder().create();
-//        OrderMessage orderMessage = gson.fromJson(msg, OrderMessage.class);
-//        log.info("Received a new message thru {}. Message: {}", this.getClass().getName(), orderMessage);
+//        PaymentMessage paymentMessage = gson.fromJson(msg, PaymentMessage.class);
+//        log.info("Received a new message via {}. Message: {}", this.getClass().getName(), paymentMessage);
 //
 //        log.info("Processing payment for the new order received");
 //        try {

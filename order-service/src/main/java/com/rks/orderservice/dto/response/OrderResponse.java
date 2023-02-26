@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -54,7 +55,9 @@ public class OrderResponse implements Serializable {
     private List<OrderItemResponse> items = new ArrayList<>();
 
     public void addItem(Long id, String name, int quantity,
-                        BigDecimal price, BigDecimal mrp, BigDecimal discount, String imageUrl, String sku) {
+                        BigDecimal price, BigDecimal mrp, BigDecimal discount, String imageUrl,
+                        String sku, String description,
+                        String deliveryStatus, Timestamp deliveryDate) {
         OrderItemResponse newItem = new OrderItemResponse();
         newItem.setName(name);
         newItem.setQuantity(quantity);
@@ -63,6 +66,9 @@ public class OrderResponse implements Serializable {
         newItem.setDiscount(discount);
         newItem.setImageUrl(imageUrl);
         newItem.setSku(sku);
+        newItem.setDescription(description);
+        newItem.setDeliveryStatus(deliveryStatus);
+        newItem.setDeliveryDate(deliveryDate);
         //newItem.setId(id);
 
         if (items == null) {

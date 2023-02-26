@@ -24,7 +24,7 @@ import static com.rks.paymentservice.constants.Constant.ORDER_STATUS_CREATED;
 
 @Slf4j
 @Service
-public class OrderService {
+public class PaymentOrderService {
 
     @Autowired
     private OrderRepository orderRepository;

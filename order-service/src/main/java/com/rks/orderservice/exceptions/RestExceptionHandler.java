@@ -15,12 +15,12 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 
 import static com.rks.mcommon.constants.CommonConstants.FAILED;
-import static com.rks.mcommon.constants.CommonConstants.PENDING;
 import static com.rks.orderservice.constants.OrderServiceErrorMessages.INVALID_PARAMETER_IN_REQUEST;
 
 @ControllerAdvice

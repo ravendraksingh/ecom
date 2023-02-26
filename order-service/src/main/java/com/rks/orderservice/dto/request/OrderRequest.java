@@ -5,12 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import javax.validation.Valid;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,7 +19,7 @@ import static com.rks.orderservice.constants.OrderServiceConstants.USER_EMAIL;
 
 
 @Data
-@NoArgsConstructor
+@RequiredArgsConstructor
 @AllArgsConstructor
 public class OrderRequest {
 
@@ -39,15 +37,18 @@ public class OrderRequest {
     @JsonProperty(USER_EMAIL)
     private String userEmail;
 
+    @Min(value = 1, message = "Total MRP must be greater than or equal to 1")
     @JsonProperty("total_mrp")
     private BigDecimal totalMRP;
 
     @JsonProperty("total_saving")
     private BigDecimal totalSaving;
 
+    @Min(value = 1, message = "Net amount must be greater than or equal to 1")
     @JsonProperty("net_amount")
     private BigDecimal netAmount;
 
+    @Min(value = 1, message = "Total quantity must be greater than or equal to 1")
     @JsonProperty("total_quantity")
     private int totalQuantity;
 }

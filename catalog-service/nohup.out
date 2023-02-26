@@ -1609,3 +1609,1079 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 2022-12-09 14:13:58.260  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
 2022-12-09 14:13:58.278  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
 2022-12-09 14:41:14.477  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m3s55ms).
+2022-12-09 16:48:57.985  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:48:57.992  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:49:15.704  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:49:15.707  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:49:21.140  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:49:21.141  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:52:53.303  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 16:52:53.311  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:04:17.481  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.ProductServiceImpl    : Fetching product details for sku=CM-01-R
+2022-12-09 17:04:52.993  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:04:53.002  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:06:10.874  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:12:53.810  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:53.813  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:55.085  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:55.085  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:58.335  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:58.338  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:59.783  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:12:59.786  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:03.742  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:03.744  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:11.276  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:11.279  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:15.381  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:15.389  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:16.770  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:16.775  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:42.848  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:42.850  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:45.009  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:45.013  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:51.730  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:51.736  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:56.827  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:13:56.829  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:08.278  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:08.285  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:28.100  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:28.104  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:35.084  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:35.093  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:59.085  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:15:59.091  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:16:11.245  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:16:11.247  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:16:18.112  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:16:18.122  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:16:28.162  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:16:28.168  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:17:17.108  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:17:17.113  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:17:24.119  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:17:24.123  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:17:32.354  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:17:32.359  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:13.123  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:13.128  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:19.161  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:19.164  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:19.238  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:19.508  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:19.615  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:19.764  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:19.795  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.067  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.240  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.271  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.371  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.442  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.508  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.540  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.597  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.702  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.787  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.829  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.853  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.926  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:20.973  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.009  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.041  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.077  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.104  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.116  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.138  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.228  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.248  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.264  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.301  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.359  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.378  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.417  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.449  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.503  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.527  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.560  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.570  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.589  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.614  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.637  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.650  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.668  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.685  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.707  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.726  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.758  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.809  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.828  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.867  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.884  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.899  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.919  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.941  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.960  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.980  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:21.997  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.040  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.052  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.061  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.070  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.139  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.157  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.173  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.197  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.216  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.247  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.259  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.391  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.403  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.436  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.449  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.478  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.498  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.522  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.548  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.558  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.619  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.629  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.672  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.677  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.686  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.696  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.736  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.752  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.764  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.796  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.805  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.831  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.845  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.873  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.886  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.901  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.939  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.953  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.972  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:22.984  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.010  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.023  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.039  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.053  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.066  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.092  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.104  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.155  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.295  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.304  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.326  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.379  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.408  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.457  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.475  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.501  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.518  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.539  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.574  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.646  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.657  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.667  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.691  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.701  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.729  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.758  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.772  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.791  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.801  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.812  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.831  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.843  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.864  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.879  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.897  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.914  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.941  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:23.963  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.011  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.020  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.037  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.049  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.065  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.072  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.091  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.109  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.126  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.144  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.151  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.162  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.178  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.211  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.243  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.254  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.273  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.299  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.312  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.321  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.326  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.343  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.350  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.360  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.374  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.392  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.401  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.423  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.429  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.441  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.469  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.487  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.508  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.533  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.558  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.568  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.592  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.616  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.635  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.652  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.671  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.681  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.713  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.744  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.769  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.787  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:24.942  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.011  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.026  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.070  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.081  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.101  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.116  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.136  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.145  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.154  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.184  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.214  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.225  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.235  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.258  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.283  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.296  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.311  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.341  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.350  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.460  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.477  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.494  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.504  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.516  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.528  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.551  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.563  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.590  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.600  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.626  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.643  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.659  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.664  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.677  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.689  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.728  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.739  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.750  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.757  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.765  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.782  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.827  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.846  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.859  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.872  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.879  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.897  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.912  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.939  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.948  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.972  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.986  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:25.999  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.026  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.250  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.278  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.290  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.311  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.322  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.333  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.482  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.497  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.510  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.523  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.536  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.547  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.563  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.583  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.688  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.710  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.734  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.751  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.776  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.827  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.850  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.865  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.883  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.910  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.919  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.951  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.963  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.976  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:26.988  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.003  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.012  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.227  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.254  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.263  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.316  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.326  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.353  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.364  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.413  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.422  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.474  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.486  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.542  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.548  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.553  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.569  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.577  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.585  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.622  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.638  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.657  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.666  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.676  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.709  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.717  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.734  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.754  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.775  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.796  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.830  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.841  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.851  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.864  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.873  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.883  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.929  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.970  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:27.996  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.002  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.028  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.034  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.056  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.073  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.088  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.123  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.134  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.145  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.172  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.177  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.190  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.203  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.214  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.229  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.234  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.247  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.264  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.277  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.296  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.311  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.323  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.335  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.343  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.379  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.393  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.403  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.431  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.446  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.461  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.465  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.477  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.487  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.499  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.507  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.531  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.542  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.561  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.572  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.585  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.595  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.618  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.631  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.640  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.651  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.664  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.680  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.720  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.724  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.740  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.759  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.785  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.816  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.831  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:28.859  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.141  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.211  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.218  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.229  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.271  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.294  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.307  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.324  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.339  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.358  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.363  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.370  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.384  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.389  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.398  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.409  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.424  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.458  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.480  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.503  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.508  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.517  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.531  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.559  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.579  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.589  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.616  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.627  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.637  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.648  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.654  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.682  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.690  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.710  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.738  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.768  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.782  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.791  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.818  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.842  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.850  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.870  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.883  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.896  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.910  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.931  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.942  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.954  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.962  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.975  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:29.992  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.004  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.021  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.027  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.036  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.047  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.056  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.063  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.072  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.082  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.096  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.123  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.129  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.140  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.146  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.162  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.170  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.177  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.202  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.237  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.243  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.264  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.301  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.307  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.320  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.332  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.346  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.363  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.403  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.419  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.423  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.458  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.476  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.488  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.495  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.507  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.523  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.533  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.541  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.556  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.566  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.581  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.586  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.604  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.626  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.643  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.650  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.674  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.688  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.715  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.719  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.738  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.750  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.756  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.779  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.789  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.812  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.820  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.842  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.868  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.882  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.891  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.916  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.925  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.947  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.966  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.989  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:30.993  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.016  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.027  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.044  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.053  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.062  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.080  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.088  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.112  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.131  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.136  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.147  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.190  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.204  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.222  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.230  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.239  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.249  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.257  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.270  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.275  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.289  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.319  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.329  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.340  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.375  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.380  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.410  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.419  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.431  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.458  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.476  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.488  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.509  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.515  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.529  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.537  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.551  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.570  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.582  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.596  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.605  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.623  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.633  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.643  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.650  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.659  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.673  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.709  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.753  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.762  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.770  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.787  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.803  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.812  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.830  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.838  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.857  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.869  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.873  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.885  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.895  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.904  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.919  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.950  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.959  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.967  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.983  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:31.992  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.002  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.009  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.020  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.038  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.045  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.080  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.085  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.093  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.125  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.131  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.138  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.153  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.187  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.208  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.230  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.239  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.251  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.258  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.274  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.290  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.296  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.309  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.320  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.344  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.348  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.390  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.443  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.457  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.473  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.570  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.578  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.594  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.603  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.712  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.722  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.731  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.748  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.810  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.846  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.859  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.867  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.901  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.911  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.949  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.967  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:32.990  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.000  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.016  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.069  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.076  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.084  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.109  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.115  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.172  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.181  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.214  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.222  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.241  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.244  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.276  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.289  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.409  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.421  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.432  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.453  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.462  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.493  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.508  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.522  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.526  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.543  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.571  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.604  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.613  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.628  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.641  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.647  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.657  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.679  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.685  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.719  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.752  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.763  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.846  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.857  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.905  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.919  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.929  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.940  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.947  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.959  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:33.972  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.004  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.019  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.104  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.121  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.155  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.162  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.171  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.179  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.193  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.214  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.225  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.252  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.256  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.268  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.277  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.295  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.305  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.378  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.385  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.500  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.531  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.564  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.570  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.606  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.620  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.798  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.806  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.817  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.824  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.834  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.838  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.857  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.888  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.911  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.934  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:34.945  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.211  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.230  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.260  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.284  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.306  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.328  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.343  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.368  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.398  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.407  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.435  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.441  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.464  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.546  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.569  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.577  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.613  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.687  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.716  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.724  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.773  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.820  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.827  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.834  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.851  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.871  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.885  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.896  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.927  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.939  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.954  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.961  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:35.971  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.009  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.055  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.064  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.095  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.106  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.153  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.162  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.183  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.235  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.246  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.270  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.279  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.296  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.325  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.331  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.349  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.383  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.411  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.424  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.435  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.451  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.481  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.487  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.561  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.572  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.625  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.633  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.677  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.688  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.707  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.714  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.723  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.736  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.791  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.804  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.818  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.840  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.887  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.906  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.926  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.946  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.974  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:36.986  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.008  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.022  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.030  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.041  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.356  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.364  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.399  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.407  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.418  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.426  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.641  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.662  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.669  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.681  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.729  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.737  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.755  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.774  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.779  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.836  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.847  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.864  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.921  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.931  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.968  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:37.998  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.079  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.090  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.307  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.327  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.338  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.537  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:38.537  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:38.539  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:44.187  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:44.194  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:44.258  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:58.863  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:58.865  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:18:58.885  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:18:58.951  INFO 62418 --- [nio-8100-exec-8] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:27017
+2022-12-09 17:22:59.302  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:22:59.303  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:22:59.307  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:10.105  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:10.106  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:10.124  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:23:31.140  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:31.143  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:36.121  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:36.123  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:40.044  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:23:40.051  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:24:25.843  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:24:25.845  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:24:25.960  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:24:54.740  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:24:54.744  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:24:54.799  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:26:32.185  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:26:32.190  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:26:32.201  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:27:59.480  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:27:59.481  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:27:59.494  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:28:52.418  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:28:52.425  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:28:52.426  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:28:53.702  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:28:53.703  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:28:53.705  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:28:57.411  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:28:57.409  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:28:57.414  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:29:00.321  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:29:00.325  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:29:00.327  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:31:28.325  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:31:28.326  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:31:41.344  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:31:41.349  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:31:51.243  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:31:51.245  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:18.152  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:18.155  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:22.581  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:22.613  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:28.139  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:28.148  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:32:28.150  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:33:05.523  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:33:05.526  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:33:05.545  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:33:10.657  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:33:10.660  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:33:10.666  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:34:13.105  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:13.108  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:33.525  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:33.527  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:33.530  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:34:43.675  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:43.675  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:43.687  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:34:43.834  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:34:43.836  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:43.840  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:43.884  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:34:43.884  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:43.888  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:44.096  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:44.100  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:44.105  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:34:49.356  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:49.359  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:55.701  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:55.702  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:34:55.719  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:35:39.780  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:39.781  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:39.784  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:35:39.880  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:39.884  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:35:39.883  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:40.007  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:40.008  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:40.017  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:35:40.190  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:35:40.189  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:40.192  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:40.289  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:35:40.291  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:35:40.292  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:42:26.910  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m10s721ms).
+2022-12-09 17:44:11.918  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:44:11.923  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:44:11.924  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:04.811  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:04.815  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:04.828  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:45:05.005  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:45:05.002  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:05.007  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:11.017  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:45:11.017  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:11.021  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:25.878  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:25.882  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:45:25.902  INFO 62418 --- [nio-8100-exec-2] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:51:43.271  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:51:43.275  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:51:43.284  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:51:47.853  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:51:47.854  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:51:47.861  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:52:39.096  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:39.096  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:39.099  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:52:39.295  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:39.304  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:52:39.304  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:51.658  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:51.663  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:55.419  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:55.422  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:58.587  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:52:58.586  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:52:58.590  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:53:18.512  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:53:18.513  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:53:18.525  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:54:04.941  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:04.947  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:54:04.944  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:21.050  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:21.054  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:35.335  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:35.351  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:38.595  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:38.607  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:44.438  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:44.441  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:47.117  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:47.118  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:54:47.124  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:57:13.837  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.ProductServiceImpl    : Fetching product details for sku=java-00001
+2022-12-09 17:57:34.375  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 17:57:34.376  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 17:57:34.388  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:07.906  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:07.906  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:17.345  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:17.348  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:20.841  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:20.841  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:28.747  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:28.753  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:34.532  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:34.536  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:37.956  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:37.961  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:42.573  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:42.583  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:48.798  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:48.811  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:52.831  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:01:52.829  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:01:52.833  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:14.025  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:14.026  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:14.030  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:03:15.655  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:15.655  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:15.671  INFO 62418 --- [nio-8100-exec-4] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:03:46.897  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:46.902  INFO 62418 --- [nio-8100-exec-9] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:47.670  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:47.670  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:54.567  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:54.573  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:59.483  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:03:59.486  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:04.325  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:04.326  INFO 62418 --- [io-8100-exec-10] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:07.692  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:07.699  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:07.704  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:04:47.976  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:04:47.976  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:47.979  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:55.835  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:04:55.841  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:04:55.849  INFO 62418 --- [nio-8100-exec-4] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:27.271  INFO 62418 --- [nio-8100-exec-3] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:05:27.268  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:27.273  INFO 62418 --- [nio-8100-exec-6] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:32.043  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:32.046  INFO 62418 --- [nio-8100-exec-2] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:32.061  INFO 62418 --- [io-8100-exec-10] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:05:46.759  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:46.762  INFO 62418 --- [nio-8100-exec-8] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:46.771  INFO 62418 --- [nio-8100-exec-7] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 18:05:49.055  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:49.055  INFO 62418 --- [nio-8100-exec-5] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 18:05:49.076  INFO 62418 --- [nio-8100-exec-1] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 19:20:31.586  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m2s494ms).
+2022-12-09 20:23:49.229  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m47s94ms).
+2022-12-09 20:32:33.008  INFO 62418 --- [nio-8100-exec-6] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-09 20:32:33.014  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-09 20:32:33.018  INFO 62418 --- [nio-8100-exec-3] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-09 20:39:20.550  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s833ms), soft-evicting connections from pool.
+2022-12-09 21:07:13.758  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m53s208ms).
+2022-12-10 09:39:57.711  WARN 62418 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h32m43s351ms).
+2022-12-10 09:40:40.823  INFO 62418 --- [nio-8100-exec-8] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-10 09:40:40.825  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-10 09:40:40.836  INFO 62418 --- [nio-8100-exec-7] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-10 09:41:31.775  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query before modification --> Query: {}, Fields: {}, Sort: {}
+2022-12-10 09:41:31.779  INFO 62418 --- [nio-8100-exec-5] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-10 09:41:31.778  INFO 62418 --- [nio-8100-exec-1] c.r.c.dao.impl.ProductSearchDaoImpl      : query after: Query: {}, Fields: {}, Sort: {}
+2022-12-10 09:42:12.982  INFO 62418 --- [nio-8100-exec-9] c.r.c.service.impl.CategoryServiceImpl   : Fetching all categories
+2022-12-10 09:42:39.414 ERROR 62418 --- [nio-8100-exec-6] c.r.c.exceptions.RestExceptionHandler    : Unhandled exceptions  | Exception : class org.springframework.http.converter.HttpMessageConversionException | Cause : com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.rks.catalog.entity.category.Category` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 2] | Exception message : Type definition error: [simple type, class com.rks.catalog.entity.category.Category]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.rks.catalog.entity.category.Category` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 2] | StackTrace : org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:242)____org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:227)____org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)____org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)____org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)____org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)____org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)____org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)____org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)____org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)____org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)____org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)____org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)____org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)____org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+2022-12-10 09:42:39.416  INFO 62418 --- [nio-8100-exec-6] c.r.c.exceptions.RestExceptionHandler    : Status changed to pending ErrorResponse(super=BaseResponse(status=pending, message=Error occurred. Please try again in sometime, code=null))
+2022-12-10 09:43:46.496 ERROR 62418 --- [nio-8100-exec-3] c.r.c.exceptions.RestExceptionHandler    : Unhandled exceptions  | Exception : class org.springframework.http.converter.HttpMessageConversionException | Cause : com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.rks.catalog.entity.category.Category` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 2] | Exception message : Type definition error: [simple type, class com.rks.catalog.entity.category.Category]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.rks.catalog.entity.category.Category` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (PushbackInputStream); line: 1, column: 2] | StackTrace : org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:242)____org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:227)____org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)____org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)____org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)____org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)____org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)____org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)____org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)____org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)____org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)____org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)____org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)____org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)____org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+2022-12-10 09:43:46.504  INFO 62418 --- [nio-8100-exec-3] c.r.c.exceptions.RestExceptionHandler    : Status changed to pending ErrorResponse(super=BaseResponse(status=pending, message=Error occurred. Please try again in sometime, code=null))

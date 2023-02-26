@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.Date;
 
 @AllArgsConstructor
@@ -22,13 +23,13 @@ public class Item {
     @Column(name = "item_id")
     private Long id;
 
-    @Column(name = "sku")
+    @Column(name = "sku", length = 10, nullable = false)
     private String sku;
 
-    @Column(name = "item_name")
+    @Column(name = "item_name", length = 255, nullable = false)
     private String name;
 
-    @Column(name = "quantity")
+    @Column(name = "quantity", length = 3, nullable = false)
     private int quantity;
 
     @Column(name = "mrp")
@@ -37,11 +38,20 @@ public class Item {
     @Column(name = "discount")
     private BigDecimal discount;
 
-    @Column(name = "price")
+    @Column(name = "price", nullable = false)
     private BigDecimal price;
 
     @Column(name = "image_url")
     private String imageUrl;
+
+    @Column(name = "description", length=500)
+    private String description;
+
+    @Column(name = "delivery_status")
+    private String deliveryStatus;
+
+    @Column(name = "delivery_date")
+    private Timestamp deliveryDate;
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
@@ -53,4 +63,15 @@ public class Item {
     @Column(name = "updated_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP", insertable = false, updatable = false)
     private Date updatedDate;
 
+    @Override
+    public String toString() {
+        return "Item{" +
+                "sku='" + sku + '\'' +
+                ", name='" + name + '\'' +
+                ", quantity=" + quantity +
+                ", mrp=" + mrp +
+                ", discount=" + discount +
+                ", price=" + price +
+                '}';
+    }
 }

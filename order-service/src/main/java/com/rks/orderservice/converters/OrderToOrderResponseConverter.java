@@ -28,7 +28,8 @@ public class OrderToOrderResponseConverter implements Converter<Order, OrderResp
             for (Item i : context.getSource().getItems()) {
                 context.getDestination().addItem(i.getId(), i.getName(),
                         i.getQuantity(), i.getPrice(), i.getMrp(), i.getDiscount(),
-                        i.getImageUrl(), i.getSku());
+                        i.getImageUrl(), i.getSku(), i.getDescription(),
+                        i.getDeliveryStatus(), i.getDeliveryDate());
             }
         }
         return context.getDestination();

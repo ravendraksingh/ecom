@@ -1,0 +1,9 @@
+spring.profiles.active=dev
+spring.application.name=paymentservice
+server.port=8300
+spring.cloud.config.uri=http://localhost:8888
+## Ravendra : 9-Dec-2022 8:13pm, Below four properties are not required to be set
+#spring.config.import=configserver:http://localhost:8888
+#spring.cloud.config.enabled=true
+#spring.cloud.config.profile=dev
+#spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration

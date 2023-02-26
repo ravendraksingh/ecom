@@ -7,11 +7,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.env.Environment;
 
 //@EnableConfigurationProperties({DatabaseCreds.class, OrderServiceConfig.class})
-@SpringBootApplication
+@SpringBootApplication(exclude = {
+        RabbitAutoConfiguration.class
+})
 public class OrderServiceApplication {
     private static final Logger logger = LoggerFactory.getLogger(OrderServiceApplication.class);
 

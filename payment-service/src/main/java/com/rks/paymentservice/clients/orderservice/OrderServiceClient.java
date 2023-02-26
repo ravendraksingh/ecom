@@ -1,6 +1,6 @@
 package com.rks.paymentservice.clients.orderservice;
 
-import com.rks.paymentservice.dto.request.OrderResponse;
+import com.rks.paymentservice.dto.response.OrderResponse;
 
 public interface OrderServiceClient {
     OrderResponse getOrderDetails(Long orderId);

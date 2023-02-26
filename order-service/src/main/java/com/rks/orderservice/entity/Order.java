@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -49,15 +50,18 @@ public class Order {
     @Column(name = "payment_status")
     private String paymentStatus;
 
+    @Column(name = "payment_date")
+    private Timestamp paymentDate;
+
     @Column(name = "created_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", insertable = false, updatable = false)
-    private Date createdDate;
+    private Timestamp createdDate;
 
     @Column(name = "updated_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP", insertable = false, updatable = false)
-    private Date updatedDate;
+    private Timestamp updatedDate;
 
     public void addItem(String sku, String name, int quantity,
                         BigDecimal mrp, BigDecimal discount, BigDecimal price,
-                        String imageUrl) {
+                        String imageUrl, String description) {
         Item newItem = new Item();
         newItem.setSku(sku);
         newItem.setName(name);
@@ -66,6 +70,8 @@ public class Order {
         newItem.setDiscount(discount);
         newItem.setPrice(price);
         newItem.setImageUrl(imageUrl);
+        newItem.setDescription(description);
+
         newItem.setOrder(this);
         if (items == null) {
             items = new ArrayList<>();
@@ -75,7 +81,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "{" +
+        return "Order{" +
                 "id=" + id +
                 ", orderDate=" + orderDate +
                 ", userEmail='" + userEmail + '\'' +
@@ -86,6 +92,7 @@ public class Order {
                 ", items=" + items +
                 ", orderStatus='" + orderStatus + '\'' +
                 ", paymentStatus='" + paymentStatus + '\'' +
+                ", paymentDate=" + paymentDate +
                 ", createdDate=" + createdDate +
                 ", updatedDate=" + updatedDate +
                 '}';

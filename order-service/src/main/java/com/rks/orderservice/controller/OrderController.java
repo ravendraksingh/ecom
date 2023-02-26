@@ -18,6 +18,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import java.text.ParseException;
@@ -78,7 +79,7 @@ public class OrderController {
             produces = "application/json"
     )
     @ResponseStatus(code = HttpStatus.CREATED)
-    public OrderResponse createOrder(@RequestBody OrderRequest request) {
+    public OrderResponse createOrder(@Valid @RequestBody OrderRequest request) {
         return orderService.createNewOrder(request);
     }
 

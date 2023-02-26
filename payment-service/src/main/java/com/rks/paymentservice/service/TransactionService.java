@@ -1,12 +1,15 @@
 package com.rks.paymentservice.service;
 
-import com.rks.paymentservice.dto.request.OrderResponse;
 import com.rks.paymentservice.dto.request.TransactionRequest;
-import com.rks.paymentservice.dto.request.TransactionResponse;
+import com.rks.paymentservice.dto.response.TransactionResponse;
 import com.rks.paymentservice.entity.Transaction;
+import com.rks.paymentservice.rabbitmq.OrderMessage;
+import com.rks.paymentservice.rabbitmq.PaymentMessage;
+import com.rks.paymentservice.rabbitmq.PaymentMessageProducer;
 import com.rks.paymentservice.repository.TransactionRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -23,6 +26,11 @@ public class TransactionService {
 
     @Autowired
     private TransactionRepository transactionRepository;
+    @Autowired
+    private PaymentMessageProducer paymentMessageProducer;
+
+    @Value("${rabbitmq.enabled}")
+    private boolean queueEnabled;
 
     public TransactionResponse create(TransactionRequest request) {
         log.info("Creating a new txn for, request=" + request);
@@ -30,15 +38,31 @@ public class TransactionService {
         Transaction savedTxn = transactionRepository.save(tx);
         TransactionResponse transactionResponse = createTxnResponseForTxn(savedTxn);
         log.info("response = " + transactionResponse);
+        if (queueEnabled) {
+            log.info("Queue is enabled");
+            PaymentMessage paymentMessage = createPaymentMessageForTransaction(savedTxn);
+            log.info("Sending paymentMessage {} to message queue", paymentMessage);
+            paymentMessageProducer.sendMessage(paymentMessage);
+            log.info("Message successfully sent to queue");
+        }
         return transactionResponse;
     }
 
-    public TransactionResponse getById(Long transactionId) {
+     public TransactionResponse getById(Long transactionId) {
         Optional<Transaction> optionalTxn = transactionRepository.findById(transactionId);
         if (!optionalTxn.isPresent()) {
             throw new RuntimeException("Transaction id " + transactionId + " not found");
         }
         TransactionResponse response = createTxnResponseForTxn(optionalTxn.get());
+        return response;
+    }
+
+    public TransactionResponse getByPGOrderId(Long pgOrderId) {
+        Transaction optionalTxn = transactionRepository.findByPgorderid(pgOrderId);
+        if (optionalTxn == null) {
+            throw new RuntimeException("Transaction not found for PG Order Id: " + pgOrderId );
+        }
+        TransactionResponse response = createTxnResponseForTxn(optionalTxn);
         return response;
     }
 
@@ -115,4 +139,18 @@ public class TransactionService {
         response.setEmail(transaction.getEmail());
         return response;
     }
+
+    private PaymentMessage createPaymentMessageForTransaction(Transaction transaction) {
+        PaymentMessage message = new PaymentMessage();
+        message.setTransactionid(transaction.getTransactionid());
+        message.setOrderid(transaction.getOrderid());
+        message.setMercid(transaction.getMercid());
+        message.setTransaction_date(transaction.getTransaction_date());
+        message.setSurcharge(transaction.getSurcharge());
+        message.setDiscount(transaction.getDiscount());
+        message.setNet_amount(transaction.getAmount());
+        return message;
+    }
+
+
 }

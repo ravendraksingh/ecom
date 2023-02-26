@@ -9,5 +9,5 @@ import java.util.List;
 public interface TransactionRepository extends PagingAndSortingRepository<Transaction, Long> {
 
     List<Transaction> findAllByEmailOrderByTransactionidDesc(String email);
-
+    Transaction findByPgorderid(Long pgOrderId);
 }

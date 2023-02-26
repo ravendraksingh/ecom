@@ -1,7 +1,6 @@
 package com.rks.paymentservice.service;
 
-import com.rks.paymentservice.controller.OrderController;
-import com.rks.paymentservice.dto.request.OrderResponse;
+import com.rks.paymentservice.dto.response.OrderResponse;
 import com.rks.paymentservice.entity.Order;
 import com.rks.paymentservice.dto.request.OrderRequest;
 import com.rks.paymentservice.repository.OrderRepository;
@@ -9,14 +8,10 @@ import com.rks.paymentservice.util.DateTimeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.hateoas.Link;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Optional;
-import java.util.TimeZone;
 
 import static com.rks.paymentservice.constants.Constant.ORDER_STATUS_CREATED;
 //import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;

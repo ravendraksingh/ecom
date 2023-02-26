@@ -1,4 +1,4 @@
-package com.rks.paymentservice.dto.request;
+package com.rks.paymentservice.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

@@ -4,7 +4,7 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.rks.paymentservice.clients.orderservice.OrderServiceClient;
 import com.rks.paymentservice.constants.Constant;
-import com.rks.paymentservice.dto.request.OrderResponse;
+import com.rks.paymentservice.dto.response.OrderResponse;
 import com.rks.paymentservice.exceptions.BaseException;
 import com.rks.paymentservice.exceptions.MicroServiceUnavailableException;
 import com.rks.paymentservice.util.CommonUtils;

@@ -1,8 +1,7 @@
 package com.rks.paymentservice.controller;
 
 import com.rks.paymentservice.dto.request.TransactionRequest;
-import com.rks.paymentservice.dto.request.TransactionResponse;
-import com.rks.paymentservice.entity.Transaction;
+import com.rks.paymentservice.dto.response.TransactionResponse;
 import com.rks.paymentservice.service.TransactionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

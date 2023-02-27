@@ -1,4 +1,4 @@
-package com.rks.mcommon.utility;
+package com.rks.mcommon.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.hash.Hashing;

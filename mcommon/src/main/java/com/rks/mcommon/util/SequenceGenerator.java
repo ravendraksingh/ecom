@@ -1,4 +1,4 @@
-package com.rks.mcommon.utility;
+package com.rks.mcommon.util;
 
 import java.net.NetworkInterface;
 import java.security.SecureRandom;

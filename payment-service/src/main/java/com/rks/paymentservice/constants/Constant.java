@@ -59,4 +59,6 @@ public class Constant {
     public static final String PAYMENT_METHOD_WALLET = "wallet";
     public static final String PAYMENT_METHOD_EMI = "emi";
     public static final String PAYMENT_METHOD_UPI = "upi";
+
+    public static final String TXN_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssXXX";
 }

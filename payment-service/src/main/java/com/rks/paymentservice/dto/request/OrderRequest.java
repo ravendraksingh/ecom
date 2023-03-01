@@ -11,6 +11,9 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.Map;
 
+
+import static com.rks.paymentservice.constants.Constant.TXN_DATE_FORMAT;
+
 @ToString
 @Setter
 @Getter
@@ -18,7 +21,7 @@ public class OrderRequest {
     private String orderid;
     private String entity;
     private String mercid;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssXXX")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = TXN_DATE_FORMAT)
     private Timestamp order_date;
     private BigDecimal amount;
     private BigDecimal amount_due;

@@ -1,4 +1,4 @@
-package com.rks.orderservice.util;
+package com.rks.paymentservice.util;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Component
 public class CustomTxnDateSerializer extends StdSerializer<Date> {
-    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ssXXX");
+    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
     public CustomTxnDateSerializer() {
         this(null);
     }

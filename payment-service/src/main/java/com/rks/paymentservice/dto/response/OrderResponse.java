@@ -24,13 +24,10 @@ import java.util.TimeZone;
 public class OrderResponse implements Serializable {
 //public class OrderResponse extends RepresentationModel<OrderResponse> implements Serializable {
     private static final long serialVersionUID = 5354400233738724981L;
-
     private String entity;
     private Long pgorderid;
     private String orderid;
     private String mercid;
-    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssXXX")
-    //private Date order_date;
     private String order_date;
     private BigDecimal amount;
     private BigDecimal amount_due;

@@ -3,20 +3,20 @@ package com.rks.paymentservice.rabbitmq;//package com.rks.paymentservice.rabbitm
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.rks.paymentservice.dto.response.TransactionResponse;
-import com.rks.paymentservice.service.TransactionService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.rks.paymentservice.entity.Transaction;
+import com.rks.paymentservice.repository.TransactionRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+@Slf4j
 @Component
 public class OrderServiceListener {
-    private static final Logger log = LoggerFactory.getLogger(OrderServiceListener.class);
 
     @Autowired
-    private TransactionService transactionService;
+    private TransactionRepository transactionRepository;
     @Autowired
     private PaymentMessageProducer paymentMessageProducer;
 
@@ -47,7 +47,8 @@ public class OrderServiceListener {
     }
 
     private PaymentMessage updatePaymentDetailsAndCreatePaymentMessage(OrderMessage message) {
-        TransactionResponse transaction = transactionService.getByPGOrderId(message.getOrder_id());
+        //TransactionResponse transaction = transactionService.getByPGOrderId(message.getOrder_id());
+        Transaction transaction = transactionRepository.findByPgorderid(message.getOrder_id());
         PaymentMessage paymentMessage = new PaymentMessage();
         paymentMessage.setTransactionid(transaction.getTransactionid());
         paymentMessage.setOrderid(message.getOrder_id().toString());

@@ -50,4 +50,8 @@ public class OrderServiceConstants {
     public static final String HEADER_PASSWORD = "X-password";
     public static final String HEADER_TIMESTAMP = "X-timestamp";
     public static final String HEADER_RESPONSE_HMAC = "X-hmac";
+
+    public static final String TXN_DATE_FORMAT = "yyyy-MM-dd'T'hh:mm:ssXXX";
+    public static final String ECOM_DATE_FORMAT = "yyyy-MM-dd";
 }
+

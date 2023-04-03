@@ -2,29 +2,27 @@ package com.rks.orderservice.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
+import javax.persistence.Column;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
-import static com.rks.orderservice.constants.OrderServiceConstants.ORDER_DATE;
-import static com.rks.orderservice.constants.OrderServiceConstants.USER_EMAIL;
+import static com.rks.orderservice.constants.OrderServiceConstants.*;
 
 
-@Data
-@RequiredArgsConstructor
-@AllArgsConstructor
+@ToString
+@Getter
+@Setter
 public class OrderRequest {
 
     @NotNull(message = "Order date cannot be null")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = ECOM_DATE_FORMAT)
     @JsonProperty(ORDER_DATE)
     private Date orderDate;
 
@@ -51,4 +49,14 @@ public class OrderRequest {
     @Min(value = 1, message = "Total quantity must be greater than or equal to 1")
     @JsonProperty("total_quantity")
     private int totalQuantity;
+
+    private Map<String, String> customer;
+    private Map<String, String> device;
+
+    @JsonProperty("delivery_address")
+    private String deliveryAddress;
+
+    @JsonProperty("payment_method")
+    private String paymentMethod;
+
 }

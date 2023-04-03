@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Component
 public class CustomTxnDateSerializer extends StdSerializer<Date> {
-    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ssXXX");
+    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
     public CustomTxnDateSerializer() {
         this(null);
     }

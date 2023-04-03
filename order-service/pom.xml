@@ -16,7 +16,8 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+<!--        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>-->
+        <spring-boot.version>2.7.10</spring-boot.version>
         <spring-cloud.version>Hoxton.RC1</spring-cloud.version>
     </properties>
 
@@ -29,6 +30,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.apache.tomcat</groupId>-->
+<!--                    <artifactId>tomcat-jdbc</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,14 +86,24 @@
             <artifactId>modelmapper</artifactId>
             <version>2.3.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ralfstuckert.pdfbox-layout</groupId>
+            <artifactId>pdfbox2-layout</artifactId>
+            <version>1.0.1</version>
+        </dependency>
      <!--   <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>-->
-<!--        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--        </dependency>-->
        <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -163,7 +180,11 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.11.3</version>
         </dependency>
-
+        <dependency>
+            <groupId>net.bull.javamelody</groupId>
+            <artifactId>javamelody-spring-boot-starter</artifactId>
+            <version>1.92.0</version>
+        </dependency>
         <dependency>
             <groupId>com.rks</groupId>
             <artifactId>encryption</artifactId>
@@ -265,6 +286,21 @@
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <url>https://repo.spring.io/snapshot</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>

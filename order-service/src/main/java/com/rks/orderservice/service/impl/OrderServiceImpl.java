@@ -10,6 +10,8 @@ import com.rks.orderservice.rabbitmq.OrderCreatedMessageProducer;
 import com.rks.orderservice.rabbitmq.OrderMessage;
 import com.rks.orderservice.repository.OrderRepository;
 import com.rks.orderservice.service.OrderService;
+//import io.micrometer.core.instrument.Counter;
+//import io.micrometer.core.instrument.Metrics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -98,12 +100,15 @@ public class OrderServiceImpl implements OrderService {
 
     public List<OrderResponse> getAllOrdersByEmail(String email) {
         logger.info("Fetching all orders for email={}", email);
+
         List<Order> orders = orderRepository.findAllByUserEmailOrderByIdDesc(email).stream().collect(Collectors.toList());
         if (orders.isEmpty()) {
             logger.error("Order not found for email={}", email);
             throw ServiceErrorFactory.getNamedException(ORDER_NOT_FOUND);
         }
-        return orders.stream().map(this::createOrderResponseForOrder).collect(Collectors.toList());
+        List<OrderResponse> orderResponseList = orders.stream().map(this::createOrderResponseForOrder).collect(Collectors.toList());
+//        increaseCount("/users/{email}/orders", "200");
+        return orderResponseList;
     }
 
     public OrderResponse getOrderByUserEmailAndOrderId(String email, Long id) {
@@ -113,7 +118,9 @@ public class OrderServiceImpl implements OrderService {
             logger.error("Order not found for email={} and orderId={}", email, id);
             throw ServiceErrorFactory.getNamedException(ORDER_NOT_FOUND);
         }
-        return createOrderResponseForOrder(order);
+        OrderResponse orderResponse = createOrderResponseForOrder(order);
+//        increaseCount("/users/{email}/orders/{orderId}", "200");
+        return orderResponse;
     }
 
     @Override
@@ -193,5 +200,9 @@ public class OrderServiceImpl implements OrderService {
         orderMapper.map(orderRequest, order);
         return order;
     }
-    
+
+//    private void increaseCount(String apiName, String httpResponseCode) {
+//        Counter counter = Metrics.counter("api-stats", "api-name", apiName, "http-response", httpResponseCode);
+//        counter.increment();
+//    }
 }

@@ -1,6 +1,8 @@
 package com.rks.orderservice.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.rks.orderservice.converters.CustomHashMapConverter;
+import com.rks.orderservice.util.DeliveryStatusEnum;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +12,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @NoArgsConstructor
 @Data
@@ -38,20 +41,34 @@ public class Order {
     @Column(name = "total_saving")
     private BigDecimal totalSaving;
 
-    @Column(name = "total_quantity")
+    @Column(name = "total_quantity", length = 2)
     private int totalQuantity;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Item> items = new ArrayList<>();
 
-    @Column(name = "order_status")
+    @Column(name = "order_status", length = 10)
     private String orderStatus;
 
-    @Column(name = "payment_status")
+    @Column(name = "payment_status", length = 10)
     private String paymentStatus;
 
     @Column(name = "payment_date")
     private Timestamp paymentDate;
+
+    @Column(name = "customer", length = 500)
+    @Convert(converter = CustomHashMapConverter.class)
+    private Map<String, String> customer;
+
+    @Column(name = "device", length = 500)
+    @Convert(converter = CustomHashMapConverter.class)
+    private Map<String, String> device;
+
+    @Column(name = "delivery_address", length = 500)
+    private String deliveryAddress;
+
+    @Column(name = "payment_method", length = 10)
+    private String paymentMethod;
 
     @Column(name = "created_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", insertable = false, updatable = false)
     private Timestamp createdDate;
@@ -61,7 +78,8 @@ public class Order {
 
     public void addItem(String sku, String name, int quantity,
                         BigDecimal mrp, BigDecimal discount, BigDecimal price,
-                        String imageUrl, String description) {
+                        String imageUrl, String description,
+                        String deliveryStatus) {
         Item newItem = new Item();
         newItem.setSku(sku);
         newItem.setName(name);
@@ -71,6 +89,7 @@ public class Order {
         newItem.setPrice(price);
         newItem.setImageUrl(imageUrl);
         newItem.setDescription(description);
+        newItem.setDeliveryStatus(deliveryStatus);
 
         newItem.setOrder(this);
         if (items == null) {

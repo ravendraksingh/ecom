@@ -1,7 +1,6 @@
 #app:
 #  name: @project.artifactId@
 #  version: @project.version@
-
 spring:
   application:
     name: order-service
@@ -9,6 +8,25 @@ spring:
     url: jdbc:mysql://localhost:3306/order-service?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: password
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 1
+      pool-name: OrderServiceConnPool
+#      connection-test-query: select 1 from dual
+#      connection-timeout: 30000
+#      idle-timeout: 300000
+#      max-lifetime: 900000
+#      data-source-properties:
+#        prepStmtCacheSize: 250
+#        prepStmtCacheSqlLimit: 2048
+#        useServerPrepStmts: true
+#        useLocalSessionState: true
+#        rewriteBatchedStatements: true
+#        cacheResultSetMetadata: true
+#        cacheServerConfiguration: true
+#        elideSetAutoCommits: true
+#        maintainTimeStats: true
+    type: com.zaxxer.hikari.HikariDataSource
   jpa:
 #    show-sql: true
     generate-ddl: true
@@ -49,6 +67,10 @@ logging:
   level:
     org.springframework.web: info
     com.rks.orderservice: debug
+#    com.zaxxer.hikari.HikariConfig: DEBUG
+#    com.zaxxer.hikari: trace
+    org.hibernate.SQL: error
+#    org.springframework.web.filter.CommonsRequestLoggingFilter: debug
 #    org:
 #      hibernate:
 #        SQL: debug
@@ -83,10 +105,6 @@ orderservice:
   queue.name: orderservice-queue
   routing.key: orderservice-routing-key
 
-# Order creation queue config
-#order-created.exchange.name=order-created-exchange
-#order-created.queue.name=order-service-queue
-#order-created.routing.key=order-created-routing-key
 # Maximum number of connections that the server will accept and process at any given time.
 #server.tomcat.max-connections=400
 ## Maximum amount of worker threads.
@@ -122,3 +140,15 @@ orderserviceconfig:
     certFileName: "Ravendra_Singh.cer"
     certificatePassword: test123
 debug: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#        exclude: "env, beans"
+#  metrics:
+#    export:
+#      influx:
+#        db: ecom
+#        step: 10s
+#        uri: http://localhost:8086

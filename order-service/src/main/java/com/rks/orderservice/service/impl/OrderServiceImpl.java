@@ -12,6 +12,7 @@ import com.rks.orderservice.repository.OrderRepository;
 import com.rks.orderservice.service.OrderService;
 //import io.micrometer.core.instrument.Counter;
 //import io.micrometer.core.instrument.Metrics;
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -98,6 +99,7 @@ public class OrderServiceImpl implements OrderService {
         return response;
     }
 
+    @Timed(value = "getallorders.time", description = "Time taken to get all orders for email", percentiles = {0.5, 0.90})
     public List<OrderResponse> getAllOrdersByEmail(String email) {
         logger.info("Fetching all orders for email={}", email);
 

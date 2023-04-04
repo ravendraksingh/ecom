@@ -33,23 +33,12 @@ import java.util.List;
 @RequestMapping("/api/v1")
 public class OrderController {
     public static final Logger logger = LoggerFactory.getLogger(OrderController.class);
-
     private OrderService orderService;
-    @Autowired
-    RestTemplate restTemplate;
-//    @Autowired
-//    Tracer tracer;
 
     @Autowired
     public OrderController(OrderService orderService) {
         this.orderService = orderService;
     }
-
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
-
 
     /**
      * Get order details for orderId

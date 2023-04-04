@@ -70,6 +70,13 @@ logging:
 #    com.zaxxer.hikari.HikariConfig: DEBUG
 #    com.zaxxer.hikari: trace
     org.hibernate.SQL: error
+    org:
+      springframework:
+        boot:
+          actuate:
+            endpoint:
+              web:
+                servlet: error
 #    org.springframework.web.filter.CommonsRequestLoggingFilter: debug
 #    org:
 #      hibernate:
@@ -104,6 +111,7 @@ orderservice:
   exchange.name: orderservice-exchange
   queue.name: orderservice-queue
   routing.key: orderservice-routing-key
+
 
 # Maximum number of connections that the server will accept and process at any given time.
 #server.tomcat.max-connections=400
@@ -140,15 +148,14 @@ orderserviceconfig:
     certFileName: "Ravendra_Singh.cer"
     certificatePassword: test123
 debug: true
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
-#        exclude: "env, beans"
-#  metrics:
-#    export:
-#      influx:
-#        db: ecom
-#        step: 10s
-#        uri: http://localhost:8086
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+        pushgateway:
+          base-url: http://localhost:9090

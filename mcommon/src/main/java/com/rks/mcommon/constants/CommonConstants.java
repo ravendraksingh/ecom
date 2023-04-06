@@ -15,5 +15,6 @@ public class CommonConstants {
     public static final String INTERNAL_SERVER_ERROR_MSG = "Your request was declined due to an internal error. Please try again after sometime.";
     public static final String DB_NOT_AVAILABLE_ERROR_MSG = "Database not available";
 
-
+    public static final String ECOM_TXN_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssXXX";
+    public static final String ECOM_DATE_FORMAT = "yyyy-MM-dd";
 }

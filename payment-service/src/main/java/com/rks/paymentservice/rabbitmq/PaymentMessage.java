@@ -25,11 +25,11 @@ public class PaymentMessage implements Serializable {
 
     @Override
     public String toString() {
-        return "PaymentMessage{" +
+        return "{" +
                 "transactionid=" + transactionid +
                 ", orderid='" + orderid + '\'' +
                 ", mercid='" + mercid + '\'' +
-                ", transaction_date=" + new SimpleDateFormat("yyyy-MM-dd").format(transaction_date) +
+                ", transaction_date=" + new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX").format(transaction_date) +
                 ", surcharge=" + surcharge +
                 ", discount=" + discount +
                 ", net_amount=" + net_amount +

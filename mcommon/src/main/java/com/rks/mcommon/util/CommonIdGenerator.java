@@ -1,4 +1,4 @@
-package com.rks.mcommon.utility;
+package com.rks.mcommon.util;
 
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;

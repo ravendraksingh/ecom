@@ -11,6 +11,8 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
+import static com.rks.orderservice.constants.OrderServiceConstants.TXN_DATE_FORMAT;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,8 +20,8 @@ public class PaymentMessage {
     private Long transactionid;
     private String orderid;
     private String mercid;
-//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-//    private Timestamp transaction_date;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private Timestamp transaction_date;
     private BigDecimal surcharge;
     private BigDecimal discount;
     private BigDecimal net_amount;
@@ -30,7 +32,7 @@ public class PaymentMessage {
                 "transactionid=" + transactionid +
                 ", orderid='" + orderid + '\'' +
                 ", mercid='" + mercid + '\'' +
-               // ", transaction_date='" + new SimpleDateFormat("yyyy-MM-dd").format(transaction_date) + '\'' +
+                ", transaction_date='" + new SimpleDateFormat(TXN_DATE_FORMAT).format(transaction_date) + '\'' +
                 ", surcharge=" + surcharge +
                 ", discount=" + discount +
                 ", net_amount=" + net_amount +

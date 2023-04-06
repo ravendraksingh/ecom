@@ -19,6 +19,7 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -39,7 +40,7 @@ public class UserOrderController {
     @ResponseStatus(HttpStatus.OK)
     public OrderResponse getOrderByEmailAndOrderId(
             @PathVariable(value = "email") @NotEmpty(message = "User email cannot be null") String email,
-            @PathVariable(value = "orderId") @NotEmpty(message="Order id cannot be null") Long orderId) {
+            @PathVariable(value = "orderId") @Min(value = 1, message = "Incorrect order id") Long orderId) {
         return orderService.getOrderByUserEmailAndOrderId(email, orderId);
     }
 

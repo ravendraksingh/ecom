@@ -2,7 +2,7 @@ package com.rks.mcommon.exceptions;
 
 
 import com.rks.mcommon.dto.response.ErrorResponse;
-import com.rks.mcommon.utility.CommonUtils;
+import com.rks.mcommon.util.CommonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

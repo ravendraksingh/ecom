@@ -33,7 +33,7 @@ public class OrderItemResponse {
     @JsonProperty("delivery_status")
     private String deliveryStatus;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = ECOM_DATE_FORMAT)
     @JsonProperty("delivery_date")
     private Timestamp deliveryDate;
 }

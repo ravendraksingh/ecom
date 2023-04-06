@@ -2,7 +2,9 @@ package com.rks.paymentservice.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.rks.paymentservice.converters.CustomHashMapConverter;
+import com.rks.paymentservice.util.CustomTxnDateSerializer;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -19,11 +21,15 @@ import java.util.Map;
 @Setter
 @ToString
 public class TransactionResponse implements Serializable {
+    private static final long serialVersionUID = -7416628306717173889L;
+
     private String entity;
     private Long transactionid;
     private Long pgorderid;
     private String orderid;
     private String mercid;
+
+    @JsonSerialize(using = CustomTxnDateSerializer.class)
     private Timestamp transaction_date;
     private BigDecimal amount;
     private BigDecimal surcharge;
@@ -48,6 +54,8 @@ public class TransactionResponse implements Serializable {
     private String eci; //"02"
     private String payment_method_type; //"card"
     private String next_step;
+
+    @JsonSerialize(using = CustomTxnDateSerializer.class)
     private Timestamp valid_till;
     private Timestamp created_at;
     private Timestamp updated_at;

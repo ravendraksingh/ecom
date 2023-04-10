@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.client.HttpStatusCodeException;
 
 import java.util.Arrays;
 

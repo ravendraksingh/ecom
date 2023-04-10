@@ -13,6 +13,8 @@ import com.rks.orderservice.service.OrderService;
 //import io.micrometer.core.instrument.Counter;
 //import io.micrometer.core.instrument.Metrics;
 import io.micrometer.core.annotation.Timed;
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.Metrics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,26 +37,31 @@ public class OrderServiceImpl implements OrderService {
 
     @Value("${rabbitmq.enabled}")
     private boolean queueEnabled;
-    private OrderRepository orderRepository;
+    private final OrderRepository orderRepository;
     private OrderCreatedMessageProducer orderCreatedMessageProducer;
-    private OrderMapper orderMapper;
+    private final OrderMapper orderMapper;
 
-//    @Autowired
+    @Autowired
     public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper) {
         this.orderRepository = orderRepository;
         this.orderMapper = orderMapper;
     }
 
-    @Autowired
+//    @Autowired
     public OrderServiceImpl(OrderRepository orderRepository, OrderCreatedMessageProducer orderCreatedMessageProducer, OrderMapper orderMapper) {
         this.orderRepository = orderRepository;
         this.orderCreatedMessageProducer = orderCreatedMessageProducer;
         this.orderMapper = orderMapper;
     }
 
+    @Timed(value = "createorder.time", description = "Time taken to create order")
     @Transactional
     public OrderResponse createNewOrder(OrderRequest orderRequest) {
-        logger.info("Creating new order for orderRequest={}", orderRequest);
+        logger.info("Creating new order");
+        if (logger.isDebugEnabled()) {
+            logger.debug("orderRequest={}", orderRequest);
+        }
+
         Order savedOrder = orderRepository.save(createOrderForOrderRequest(orderRequest));
         if (logger.isDebugEnabled()) {
             logger.debug("Order created successfully with orderId={}. savedOrder={}", savedOrder.getId(), savedOrder);
@@ -106,10 +113,11 @@ public class OrderServiceImpl implements OrderService {
         List<Order> orders = orderRepository.findAllByUserEmailOrderByIdDesc(email).stream().collect(Collectors.toList());
         if (orders.isEmpty()) {
             logger.error("Order not found for email={}", email);
+            increaseCount("/users/{email}/orders", "404");
             throw ServiceErrorFactory.getNamedException(ORDER_NOT_FOUND);
         }
         List<OrderResponse> orderResponseList = orders.stream().map(this::createOrderResponseForOrder).collect(Collectors.toList());
-//        increaseCount("/users/{email}/orders", "200");
+        increaseCount("/users/{email}/orders", "200");
         return orderResponseList;
     }
 
@@ -170,6 +178,7 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
+    @Timed(value = "updateorder.time", description = "Time taken to update order")
     @Transactional
     public OrderResponse updateOrder(Long orderId, UpdateOrderRequest request) {
         logger.info("Updating order with orderId={}" + orderId);
@@ -203,8 +212,8 @@ public class OrderServiceImpl implements OrderService {
         return order;
     }
 
-//    private void increaseCount(String apiName, String httpResponseCode) {
-//        Counter counter = Metrics.counter("api-stats", "api-name", apiName, "http-response", httpResponseCode);
-//        counter.increment();
-//    }
+    private void increaseCount(String apiName, String httpResponseCode) {
+        Counter counter = Metrics.counter("api-stats", "api-name", apiName, "http-response", httpResponseCode);
+        counter.increment();
+    }
 }

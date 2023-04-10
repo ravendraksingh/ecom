@@ -18,17 +18,13 @@ import java.util.Date;
 
 @Component
 public class DataLoader implements CommandLineRunner {
-
     private static final Logger log = LoggerFactory.getLogger(DataLoader.class);
-
     @Autowired
     private OrderRepository orderRepository;
-    @Autowired
-    private ServiceErrorRepository errorRepository;
+
 
     @Override
     public void run(String... args) throws Exception {
-        //orderRepository.deleteAll();
 //        long count = orderRepository.count();
 //        log.info("Existing order count in table: " + count);
 //        if (count == 0) {
@@ -36,21 +32,7 @@ public class DataLoader implements CommandLineRunner {
 //        }
         //testUpdateOrder();
 //        log.info("Loading new exceptions into table");
-        //loadExceptions();
     }
-
-    private void loadExceptions() {
-        ServiceError err1 = new ServiceError();
-        err1.setError_code("ORNFE0001");
-        err1.setError_message("Order not found");
-        err1.setException_name("OrderNotFound");
-        err1.setResponse_code("ORNFE0001");
-        err1.setService_name("OR");
-        err1.setStatus("failure");
-        err1.setDescription("ORDER_NOT_FOUND");
-        errorRepository.save(err1);
-    }
-
 
     private void loadData() {
         log.info("Loading data ...........");

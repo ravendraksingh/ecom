@@ -1,17 +1,17 @@
 package com.rks.orderservice.exceptions;
 
 
-import com.rks.mcommon.response.ErrorResponse;
-import com.rks.mcommon.exceptions.*;
-import com.rks.mcommon.response.ApiError;
-import com.rks.mcommon.util.CommonUtils;
+import com.rks.mcommon.error.ApiError;
+import com.rks.mcommon.error.ErrorResponse;
+import com.rks.mcommon.exceptions.BadRequestException;
+import com.rks.mcommon.exceptions.BaseException;
+import com.rks.mcommon.exceptions.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
@@ -31,8 +31,6 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.rks.mcommon.constants.CommonConstants.FAILED;
 
 @ControllerAdvice
 public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {

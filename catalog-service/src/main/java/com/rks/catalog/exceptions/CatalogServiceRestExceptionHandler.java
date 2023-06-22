@@ -1,0 +1,1 @@
+package com.rks.catalog.exceptions;import com.rks.mcommon.exceptions.CustomRestExceptionHandler;import org.springframework.web.bind.annotation.ControllerAdvice;@ControllerAdvicepublic class CatalogServiceRestExceptionHandler extends CustomRestExceptionHandler {}

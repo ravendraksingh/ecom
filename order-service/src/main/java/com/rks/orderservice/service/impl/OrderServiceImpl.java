@@ -1,5 +1,6 @@
 package com.rks.orderservice.service.impl;
 
+import com.rks.orderservice.caching.EmailOrdersKeyGenerator;
 import com.rks.orderservice.dto.request.OrderRequest;
 import com.rks.orderservice.dto.request.UpdateOrderRequest;
 import com.rks.orderservice.dto.response.OrderResponse;
@@ -19,8 +20,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -40,14 +46,21 @@ public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
     private OrderCreatedMessageProducer orderCreatedMessageProducer;
     private final OrderMapper orderMapper;
-
-    @Autowired
-    public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper) {
-        this.orderRepository = orderRepository;
-        this.orderMapper = orderMapper;
-    }
+    @Value("${caching.enabled}")
+    private boolean cachingEnable;
 
 //    @Autowired
+//    public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper) {
+//        this.orderRepository = orderRepository;
+//        this.orderMapper = orderMapper;
+//    }
+
+//    @Autowired(required = false)
+//    public void setMessageProducer(@Nullable OrderCreatedMessageProducer orderCreatedMessageProducer) {
+//        this.orderCreatedMessageProducer = orderCreatedMessageProducer;
+//    }
+
+    @Autowired
     public OrderServiceImpl(OrderRepository orderRepository, OrderCreatedMessageProducer orderCreatedMessageProducer, OrderMapper orderMapper) {
         this.orderRepository = orderRepository;
         this.orderCreatedMessageProducer = orderCreatedMessageProducer;
@@ -106,6 +119,7 @@ public class OrderServiceImpl implements OrderService {
         return response;
     }
 
+    @Cacheable(value = "orderCache")
     @Timed(value = "getallorders.time", description = "Time taken to get all orders for email", percentiles = {0.5, 0.90})
     public List<OrderResponse> getAllOrdersByEmail(String email) {
         logger.info("Fetching all orders for email={}", email);
@@ -118,6 +132,7 @@ public class OrderServiceImpl implements OrderService {
         }
         List<OrderResponse> orderResponseList = orders.stream().map(this::createOrderResponseForOrder).collect(Collectors.toList());
         increaseCount("/users/{email}/orders", "200");
+        logger.info("Successfully fetched orders for email={}", email);
         return orderResponseList;
     }
 
@@ -197,6 +212,21 @@ public class OrderServiceImpl implements OrderService {
         Order savedOrder = orderRepository.save(order);
         OrderResponse response = new OrderResponse();
         orderMapper.map(savedOrder, response);
+        return response;
+    }
+
+    public List<OrderResponse> getOrdersPaginated(@RequestParam String email, Pageable pageRequest) {
+        logger.info("Fetching paginated order for page request: {}", pageRequest);
+        Page<Order> orders ;
+        //orderRepository.findAll().forEach(orders::add);
+//        orderRepository.findAll(pageRequest).forEach(orders::add);
+        orders = orderRepository.findAllByUserEmail(email, pageRequest);
+        logger.info(String.valueOf(orders));
+        if (orders.isEmpty()) {
+            throw ServiceErrorFactory.getNamedException(ORDER_NOT_FOUND);
+        }
+        List<OrderResponse> response = orders.stream().map(this::createOrderResponseForOrder).collect(Collectors.toList());
+        logger.info("OrderResponse List: {}", response);
         return response;
     }
 

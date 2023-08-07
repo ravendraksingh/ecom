@@ -1,6 +1,7 @@
 package com.rks.orderservice.controller;
 
 import brave.Tracer;
+import com.google.common.base.Strings;
 import com.rks.orderservice.dto.request.OrderRequest;
 import com.rks.orderservice.dto.request.UpdateOrderRequest;
 import com.rks.orderservice.dto.response.OrderResponse;
@@ -9,10 +10,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -74,8 +77,11 @@ public class OrderController {
 
     @GetMapping("/orders")
     @ResponseStatus(HttpStatus.OK)
-    public List<OrderResponse> getAllOrders() {
-       return orderService.findAllOrders();
+    public List<OrderResponse> getAllOrders(@RequestParam String email, @RequestParam(required = false) Date order_date) {
+       if (Strings.isNullOrEmpty(email)) {
+           return orderService.findAllOrders();
+       } else {
+         } return orderService.getAllOrdersByEmail(email);
     }
 
     @PutMapping("/orders/{orderId}")
@@ -83,5 +89,11 @@ public class OrderController {
     public OrderResponse updateOrder(@PathVariable @Min(value=1, message="Order id must be greater than or equal to {value}") Long orderId,
                                      @RequestBody UpdateOrderRequest request) {
         return orderService.updateOrder(orderId, request);
+    }
+
+    @GetMapping("/ordersbypage")
+    @ResponseStatus(HttpStatus.OK)
+    public List<OrderResponse> getOrdersPaginated(@RequestParam String email, Pageable pageRequest) {
+        return orderService.getOrdersPaginated(email, pageRequest);
     }
 }

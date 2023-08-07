@@ -21,7 +21,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 
-import static com.rks.paymentservice.constants.Constant.FAILED;
+import static com.rks.paymentservice.constants.Constants.FAILED;
 
 @ControllerAdvice
 public class RestExceptionHandler {

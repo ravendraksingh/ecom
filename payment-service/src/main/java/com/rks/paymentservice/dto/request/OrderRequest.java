@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import static com.rks.paymentservice.constants.Constant.TXN_DATE_FORMAT;
+import static com.rks.paymentservice.constants.Constants.TXN_DATE_FORMAT;
 
 @ToString
 @Setter

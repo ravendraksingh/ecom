@@ -13,7 +13,7 @@ import java.util.List;
 //@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:8080", "http://localhost:9080", "http://localhost:9090"})
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/payments")
 public class TransactionController {
 
     @Autowired

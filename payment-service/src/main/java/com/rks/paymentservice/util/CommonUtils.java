@@ -2,7 +2,7 @@ package com.rks.paymentservice.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.hash.Hashing;
-import com.rks.paymentservice.exceptions.BaseException;
+import com.rks.mcommon.exceptions.BaseException;
 import lombok.NonNull;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -20,7 +20,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import static com.rks.paymentservice.constants.ErrorCodeConstants.DATE_PARSE_ERROR;
+import static com.rks.paymentservice.constants.Constants.DATE_PARSE_ERROR;
 import static java.util.Calendar.*;
 
 public class CommonUtils {

@@ -1,16 +1,15 @@
 package com.rks.orderservice.racecond;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.concurrent.atomic.AtomicInteger;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -35,6 +34,4 @@ public class Account {
     private Timestamp createdDate;
     @Column(name = "updated_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP", insertable = false, updatable = false)
     private Timestamp updatedDate;
-
-
 }

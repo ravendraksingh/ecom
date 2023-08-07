@@ -3,7 +3,6 @@ package com.rks.paymentservice.clients.orderservice.impl;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.rks.paymentservice.clients.orderservice.OrderServiceClient;
-import com.rks.paymentservice.constants.Constant;
 import com.rks.paymentservice.dto.response.OrderResponse;
 import com.rks.paymentservice.exceptions.BaseException;
 import com.rks.paymentservice.exceptions.MicroServiceUnavailableException;
@@ -19,8 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-import static com.rks.paymentservice.constants.Constant.*;
-import static com.rks.paymentservice.constants.ErrorCodeConstants.*;
+import static com.rks.paymentservice.constants.Constants.*;
 
 @Component
 public class OrderServiceClientImpl implements OrderServiceClient {
@@ -206,7 +204,7 @@ public class OrderServiceClientImpl implements OrderServiceClient {
                     .sign(Algorithm.HMAC256(secret));
         } catch (Exception e) {
             logger.error("Exception: {} while generating jwt token.", CommonUtils.exceptionFormatter(e));
-            throw new BaseException(Constant.FAILED, JWT_TOKEN_GENERATION_ERROR_CODE,
+            throw new BaseException(FAILED, JWT_TOKEN_GENERATION_ERROR_CODE,
                     JWT_TOKEN_GENERATION_ERROR_MSG);
         }
     }

@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -15,7 +16,7 @@ import static com.rks.orderservice.constants.OrderServiceConstants.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderItemResponse {
+public class OrderItemResponse implements Serializable {
     private String sku;
     private String name;
     private int quantity;

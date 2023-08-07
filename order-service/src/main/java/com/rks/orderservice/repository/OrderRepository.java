@@ -1,6 +1,8 @@
 package com.rks.orderservice.repository;
 
 import com.rks.orderservice.entity.Order;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
@@ -20,4 +22,6 @@ public interface OrderRepository extends PagingAndSortingRepository<Order, Long>
 
     @Query("from orders t where t.userEmail = :email and t.orderDate = :date")
     List<Order> findAllOrdersByUserEmailAndOrderDate(String email, Date date);
+
+    Page<Order> findAllByUserEmail(String email, Pageable pageRequest);
 }

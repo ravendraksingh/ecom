@@ -17,6 +17,8 @@ spring:
   jackson:
     time-zone: Asia/Kolkata
     locale: en_IN
+  cache:
+    type: redis
 
 
 server:
@@ -40,7 +42,7 @@ logging:
 
 # AMQP RabbitMQ configuration
 rabbitmq:
-  enabled: false
+  enabled: true
 
 orderserviceconfig:
   localclientConfig:
@@ -49,3 +51,5 @@ orderserviceconfig:
     certFileName: Ravendra_Singh.cer
     certificatePassword: test123
 
+caching:
+  enabled: false

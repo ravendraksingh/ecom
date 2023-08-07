@@ -21,10 +21,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-import static com.rks.paymentservice.constants.Constant.*;
-import static com.rks.paymentservice.constants.Constant.FAILED;
-import static com.rks.paymentservice.constants.Constant.INTERNAL_SERVER_ERROR;
-import static com.rks.paymentservice.constants.ErrorCodeConstants.*;
+import static com.rks.paymentservice.constants.Constants.*;
+import static com.rks.paymentservice.constants.Constants.FAILED;
+import static com.rks.paymentservice.constants.Constants.INTERNAL_SERVER_ERROR;
 
 @Component
 public class RestMethod {

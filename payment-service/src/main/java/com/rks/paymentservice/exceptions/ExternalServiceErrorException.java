@@ -1,6 +1,5 @@
 package com.rks.paymentservice.exceptions;
 
-
 public class ExternalServiceErrorException extends BaseException {
 
     private static final long serialVersionUID = 1816263599337711015L;

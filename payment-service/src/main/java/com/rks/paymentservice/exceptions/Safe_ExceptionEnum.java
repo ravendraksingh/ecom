@@ -3,10 +3,10 @@ package com.rks.paymentservice.exceptions;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.ThreadContext;
 
-import static com.rks.paymentservice.constants.Constant.FAILED;
-import static com.rks.paymentservice.constants.Constant.INTERNAL_SERVER_ERROR;
-import static com.rks.paymentservice.constants.Constant.*;
-import static com.rks.paymentservice.constants.ErrorCodeConstants.*;
+import static com.rks.paymentservice.constants.Constants.FAILED;
+import static com.rks.paymentservice.constants.Constants.INTERNAL_SERVER_ERROR;
+import static com.rks.paymentservice.constants.Constants.*;
+
 
 public enum Safe_ExceptionEnum {
 

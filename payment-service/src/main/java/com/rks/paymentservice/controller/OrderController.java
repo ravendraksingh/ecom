@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/payments")
 public class OrderController {
 
     @Autowired

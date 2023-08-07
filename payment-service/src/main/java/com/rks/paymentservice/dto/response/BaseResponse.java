@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import static com.rks.paymentservice.constants.Constant.RESPONSE_CODE;
+import static com.rks.paymentservice.constants.Constants.RESPONSE_CODE;
 
 
 @Data

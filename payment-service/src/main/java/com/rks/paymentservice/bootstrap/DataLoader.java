@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-import static com.rks.paymentservice.constants.Constant.*;
+import static com.rks.paymentservice.constants.Constants.*;
 
 
 @Component

@@ -1,6 +1,5 @@
 package com.rks.paymentservice.dto.response;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
@@ -17,7 +16,7 @@ import java.util.Map;
 @Getter
 @Setter
 @ToString
-public class OrderResponse implements Serializable {
+public class OrderResponse extends BaseResponse implements Serializable {
 //public class OrderResponse extends RepresentationModel<OrderResponse> implements Serializable {
     private static final long serialVersionUID = 5354400233738724981L;
     private String entity;

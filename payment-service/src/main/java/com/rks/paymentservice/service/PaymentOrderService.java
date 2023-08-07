@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.sql.Timestamp;
 import java.util.Optional;
 
-import static com.rks.paymentservice.constants.Constant.ORDER_STATUS_CREATED;
+import static com.rks.paymentservice.constants.Constants.ORDER_STATUS_CREATED;
 //import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 //import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
@@ -29,6 +29,7 @@ public class PaymentOrderService {
         Order po = createOrderForOrderRequest(request);
         Order savedOrder = orderRepository.save(po);
         OrderResponse response = createOrderResponseForOrder(savedOrder);
+        log.info("Order created successfully with order Id: {}", savedOrder.getOrderid());
         log.info("response = " + response);
         return response;
     }

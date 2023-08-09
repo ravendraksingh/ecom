@@ -34,4 +34,12 @@ public class ApiError {
         errors = Arrays.asList(error);
     }
 
+    @Override
+    public String toString() {
+        return "ApiError{" +
+                "status=" + status +
+                ", message='" + message + '\'' +
+                ", errors=" + errors +
+                '}';
+    }
 }

@@ -80,11 +80,12 @@ public class OrderResponse implements Serializable {
     private List<OrderItemResponse> items = new ArrayList<>();
 
 
-    public void addItem(Long id, String name, int quantity,
+    public void addItem(Long id, Long productId, String name, int quantity,
                         BigDecimal price, BigDecimal mrp, BigDecimal discount, String imageUrl,
                         String sku, String description,
                         String deliveryStatus, Timestamp deliveryDate) {
         OrderItemResponse newItem = new OrderItemResponse();
+        newItem.setProductId(productId);
         newItem.setName(name);
         newItem.setQuantity(quantity);
         newItem.setMrp(mrp);

@@ -7,12 +7,18 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class OrderItemRequest {
+
+    @NotNull(message = "Product Id cannot be null")
+    @JsonProperty("productid")
+    private Long productId;
+
     @NotEmpty(message = "SKU cannot be null")
     private String sku;
 

@@ -1,6 +1,5 @@
 package com.rks.orderservice.service.impl;
 
-import com.rks.orderservice.caching.EmailOrdersKeyGenerator;
 import com.rks.orderservice.dto.request.OrderRequest;
 import com.rks.orderservice.dto.request.UpdateOrderRequest;
 import com.rks.orderservice.dto.response.OrderResponse;
@@ -11,8 +10,6 @@ import com.rks.orderservice.rabbitmq.OrderCreatedMessageProducer;
 import com.rks.orderservice.rabbitmq.OrderMessage;
 import com.rks.orderservice.repository.OrderRepository;
 import com.rks.orderservice.service.OrderService;
-//import io.micrometer.core.instrument.Counter;
-//import io.micrometer.core.instrument.Metrics;
 import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.Metrics;
@@ -22,7 +19,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
-
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -37,6 +33,9 @@ import java.util.stream.Collectors;
 
 import static com.rks.orderservice.constants.OrderServiceErrorCodes.ORDER_NOT_FOUND;
 
+//import io.micrometer.core.instrument.Counter;
+//import io.micrometer.core.instrument.Metrics;
+
 @Service
 public class OrderServiceImpl implements OrderService {
     private static Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
@@ -46,7 +45,7 @@ public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
     private OrderCreatedMessageProducer orderCreatedMessageProducer;
     private final OrderMapper orderMapper;
-    @Value("${caching.enabled}")
+    @Value("${caching.enabled:false}")
     private boolean cachingEnable;
 
 //    @Autowired

@@ -28,7 +28,7 @@ public class OrderRequestToOrderConverter implements Converter<OrderRequest, Ord
         context.getDestination().setPaymentMethod(context.getSource().getPaymentMethod());
 
         for (OrderItemRequest i : context.getSource().getItems()) {
-            context.getDestination().addItem(i.getSku(), i.getName(),
+            context.getDestination().addItem(i.getProductId(), i.getSku(), i.getName(),
                     i.getQuantity(), i.getMrp(), i.getDiscount(), i.getPrice(),
                     i.getImageUrl(), i.getDescription(), DeliveryStatusEnum.PENDING.getDeliveryStatus());
         }

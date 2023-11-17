@@ -23,6 +23,9 @@ public class Item {
     @Column(name = "item_id")
     private Long id;
 
+    @Column(name = "product_id", nullable = false)
+    private Long productId;
+
     @Column(name = "sku", length = 10, nullable = false)
     private String sku;
 
@@ -66,7 +69,8 @@ public class Item {
     @Override
     public String toString() {
         return "Item{" +
-                "sku='" + sku + '\'' +
+                "productId='" + productId + '\'' +
+                ", sku='" + sku + '\'' +
                 ", name='" + name + '\'' +
                 ", quantity=" + quantity +
                 ", mrp=" + mrp +

@@ -6,17 +6,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
-import static com.rks.orderservice.constants.OrderServiceConstants.*;
+import static com.rks.orderservice.constants.OrderServiceConstants.ECOM_DATE_FORMAT;
+import static com.rks.orderservice.constants.OrderServiceConstants.ITEM_UNIT_PRICE;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderItemResponse implements Serializable {
+    @JsonProperty("productid")
+    private Long productId;
     private String sku;
     private String name;
     private int quantity;

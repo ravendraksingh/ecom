@@ -31,6 +31,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @ControllerAdvice
 public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
@@ -43,22 +44,32 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity notFoundExceptionHandler(NotFoundException e) {
+        logger.error("Error occurred: ", String.valueOf(e));
+//        logger.error("Error occurred: {}, error={}", e.getCause().getMessage(), e.getCause());
         return new ResponseEntity<>(this.getErrorObject(e), HttpStatus.NOT_FOUND);
     }
 
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid (MethodArgumentNotValidException ex,
                                                                   HttpHeaders headers, HttpStatus status, WebRequest request) {
-        logger.info("Exception occurred: {}", ex.getClass().getName());
+        logger.info("Exception occurred: {}, error message: {}", ex.getClass().getName(), ex.getMessage());
         final List<String> errors = new ArrayList<String>();
         for (final FieldError error : ex.getBindingResult().getFieldErrors()) {
-            errors.add(error.getField() + ":" + error.getDefaultMessage());
+//            errors.add(error.getField() + ":" + error.getDefaultMessage());
+            errors.add(error.getDefaultMessage());
         }
         for (final ObjectError error : ex.getBindingResult().getGlobalErrors()) {
             errors.add(error.getObjectName() + ": " + error.getDefaultMessage());
         }
-        final ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
+//        final ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
+        final ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, getErrorMessage(errors), errors);
+        logger.error("apiError: {}", apiError);
         return handleExceptionInternal(ex, apiError, headers, apiError.getStatus(), request);
+    }
+
+    private String getErrorMessage(List<String> errors) {
+        String errorMessage = errors.stream().map(String::valueOf).collect(Collectors.joining(","));
+        return errorMessage;
     }
 
     @Override

@@ -19,11 +19,14 @@ spring:
     locale: en_IN
   cache:
     type: redis
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#    password: postgres
 
 
 server:
   port: 8200
-
 
 database:
   username: root
@@ -53,3 +56,5 @@ orderserviceconfig:
 
 caching:
   enabled: false
+
+debug: true

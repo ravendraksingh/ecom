@@ -29,7 +29,7 @@ public class OrderToOrderResponseConverter implements Converter<Order, OrderResp
 
         if (ctx.getSource().getItems() != null) {
             for (Item i : ctx.getSource().getItems()) {
-                ctx.getDestination().addItem(i.getId(), i.getName(),
+                ctx.getDestination().addItem(i.getId(), i.getProductId(), i.getName(),
                         i.getQuantity(), i.getPrice(), i.getMrp(), i.getDiscount(),
                         i.getImageUrl(), i.getSku(), i.getDescription(),
                         i.getDeliveryStatus(), i.getDeliveryDate());

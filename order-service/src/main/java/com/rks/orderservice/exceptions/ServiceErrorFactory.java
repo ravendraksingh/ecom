@@ -34,14 +34,14 @@ public class ServiceErrorFactory implements ApplicationContextAware {
 
     public static BaseException getNamedException(String errorCode) {
         ServiceError se = SERVICE_ERROR_MAP.get(errorCode);
-        BaseException be = null;
         if (se==null) {
-            //logger.info("in ServiceErrorFactory:getNamedException:: se==null, returning BaseException");
+            logger.info("in ServiceErrorFactory:getNamedException:: se==null, returning BaseException");
             return new BaseException("failed", 503, "Internal server error");
         }
+        BaseException be;
         try {
             Class exceptionClass = Class.forName(se.getException_name());
-            //logger.info("in ServiceErrorFactory:getNamedException::exceptionClass=" + exceptionClass + " | returning");
+            logger.info("in ServiceErrorFactory:getNamedException::exceptionClass=" + exceptionClass + " | returning");
             /*be = (BaseException) exceptionClass.getConstructor(String.class, int.class, String.class)
                     .newInstance(se.getStatus(), se.getResponse_code(),
                             se.getError_message());*/

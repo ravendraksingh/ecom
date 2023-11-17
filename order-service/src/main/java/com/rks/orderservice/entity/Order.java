@@ -2,7 +2,6 @@ package com.rks.orderservice.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.rks.orderservice.converters.CustomHashMapConverter;
-import com.rks.orderservice.util.DeliveryStatusEnum;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -76,11 +75,15 @@ public class Order {
     @Column(name = "updated_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP", insertable = false, updatable = false)
     private Timestamp updatedDate;
 
-    public void addItem(String sku, String name, int quantity,
+    @Version
+    private int version;
+
+    public void addItem(Long productId, String sku, String name, int quantity,
                         BigDecimal mrp, BigDecimal discount, BigDecimal price,
                         String imageUrl, String description,
                         String deliveryStatus) {
         Item newItem = new Item();
+        newItem.setProductId(productId);
         newItem.setSku(sku);
         newItem.setName(name);
         newItem.setQuantity(quantity);

@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "mysql",
+      "type": "com.niyava.ecom.orderservice.config.MySQLConfig",
+      "sourceType": "com.niyava.ecom.orderservice.config.MySQLConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mysql.password",
+      "type": "java.lang.String",
+      "sourceType": "com.niyava.ecom.orderservice.config.MySQLConfig"
+    },
+    {
+      "name": "mysql.url",
+      "type": "java.lang.String",
+      "sourceType": "com.niyava.ecom.orderservice.config.MySQLConfig"
+    },
+    {
+      "name": "mysql.username",
+      "type": "java.lang.String",
+      "sourceType": "com.niyava.ecom.orderservice.config.MySQLConfig"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

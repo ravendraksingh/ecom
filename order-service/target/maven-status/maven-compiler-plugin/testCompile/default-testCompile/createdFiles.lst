@@ -1,0 +1,5 @@
+com/rks/orderservice/test/SmokeTest.class
+com/rks/orderservice/test/integrationtest/UserOrderControllerIntegrationTest.class
+com/rks/orderservice/test/unittest/UserOrderControllerUnitTest.class
+com/rks/orderservice/test/integrationtest/OrderControllerIntegrationTest.class
+com/rks/orderservice/test/integrationtest/OrderRepositoryIntegrationTest.class

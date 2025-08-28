@@ -1,0 +1,1 @@
+package com.niyava.ecom.productservice.config;//@EnableDiscoveryClientpublic class EurekaClientConfig {}

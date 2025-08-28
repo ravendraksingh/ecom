@@ -1,1 +1,0 @@
-package com.rks.catalog.config;//@EnableDiscoveryClientpublic class EurekaClientConfig {}

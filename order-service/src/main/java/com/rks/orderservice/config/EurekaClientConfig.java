@@ -1,1 +1,0 @@
-package com.rks.orderservice.config;import org.springframework.beans.factory.annotation.Qualifier;//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;import org.springframework.context.annotation.Primary;//@Qualifier("eureka-client")//@Primary//@EnableDiscoveryClientpublic class EurekaClientConfig {}

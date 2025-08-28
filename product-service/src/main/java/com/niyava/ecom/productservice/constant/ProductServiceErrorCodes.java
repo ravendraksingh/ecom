@@ -1,0 +1,1 @@
+package com.niyava.ecom.productservice.constant;public class ProductServiceErrorCodes {    public static final String PRODUCT_NOT_FOUND = "PRNFE0001";    public static final String CATEGORY_NOT_FOUND = "CGNFE0001";    public static final String CATEGORY_ALREADY_EXISTS = "CGDUP0001";    public static final String BAD_REQUEST = "GNBRE0001";}

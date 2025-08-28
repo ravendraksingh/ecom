@@ -1,0 +1,1 @@
+package com.niyava.ecom.productservice.exception;import com.niyava.ecom.productservice.entity.common.ServiceError;import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.stereotype.Repository;@Repositorypublic interface ServiceErrorRepository extends JpaRepository<ServiceError, String> {}

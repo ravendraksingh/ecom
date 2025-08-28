@@ -1,0 +1,1 @@
+package com.niyava.ecom.productservice.entity.product;import com.fasterxml.jackson.annotation.JsonInclude;import lombok.Data;import lombok.EqualsAndHashCode;import lombok.NoArgsConstructor;import java.util.Map;@JsonInclude(JsonInclude.Include.NON_NULL)@EqualsAndHashCode()@NoArgsConstructor@Datapublic class DetailInfo {    private Map<String, Object> infoList;}
